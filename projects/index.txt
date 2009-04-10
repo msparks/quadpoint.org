@@ -1,0 +1,33 @@
+= Projects =
+
+Projects I've started or worked on. Many of my projects' pages are in progress and not yet shown here.
+
+== cscredits ==
+
+A utility to manage bills for a resource shared equally among many people.
+
+View project: [[projects/cscredits]]
+
+== dotfiles ==
+
+Configuration files.
+
+View project: [[projects/dotfiles]]
+
+== Irssi scripts ==
+
+A collection of scripts I have written for [[http://irssi.org|Irssi]].
+
+View project: [[projects/irssiscripts]]
+
+== rfcgraph ==
+
+A tool to visualize the relationships between RFCs.
+
+View project: [[projects/rfcgraph]]
+
+== SimpleRip ==
+
+An easy way to rip DVDs on Linux.
+
+View project: [[projects/simplerip]]
