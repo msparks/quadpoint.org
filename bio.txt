@@ -1,0 +1,51 @@
+= Matt Sparks: The Life and Times =
+
+{{http://lh3.ggpht.com/_SxQbjXQwvSs/Sd28jN1lZzI/AAAAAAAABlE/UbF8wl3ssEc/s800/IMG_1833.JPG?200|_Matt Sparks}}
+
+[[http://quadpoint.org|Matt Sparks]] received his first dose of artificial light in a hospital in Marion, Illinois in early [[http://en.wikipedia.org/wiki/1986|1986]]. He lived in Marion until age five, when he made the journey to his so-called hometown of Charleston, Illinois (home of [[http://www.eiu.edu|EIU]]). Matt spent his elementary years in Charleston. Partly into the freshman year at [[http://www.charleston.k12.il.us/CHS|Charleston High School]], he moved to the Springfield, Illinois area. Matt finished off his high school career in Chatham at [[http://ghsonline.net|Glenwood High School]] with the class of 2004.
+
+In December 2008, he completed his B.S. in [[http://www.cs.uiuc.edu|Computer Science]] in the [[http://www.engr.uiuc.edu|College of Engineering]] at the [[http://www.uiuc.edu|University of Illinois at Urbana-Champaign]] (UIUC). Starting in Fall 2009, he will be at [[http://stanford.edu|Stanford University]] working on his master's degree in Computer Science.
+
+== Interests ==
+
+=== Software ===
+
+  * Operating System: [[http://www.apple.com/macosx|Mac OS X]], [[http://gnu.org|GNU/Linux]]
+  * Shell: [[http://zsh.sourceforge.net|zsh]]
+  * IRC client: [[http://irssi.org|irssi]]
+  * IM: [[http://bitlbee.org|BitlBee]]
+  * Mail reader: [[http://gmail.com|Gmail]], [[http://mutt.org|mutt]]
+  * News reader: [[http://mutt.org|mutt]]
+  * Feeds: [[http://google.com/reader|Google Reader]]
+  * Editor: [[http://vim.org|Vim]] + [[http://www.gnu.org/software/emacs/|Emacs]] (mixed keybindings -- see [[projects/dotfiles|dotfiles]])
+  * Window manager: [[http://xmonad.org|xmonad]], [[http://xfce.org|Xfce]], [[http://fluxbox.org|fluxbox]]
+  * Language (interpreted): [[http://python.org|Python]], [[http://perl.com|Perl]]
+  * Language (compiled): [[http://en.wikipedia.org/wiki/C_(programming_language)|C/C++]]
+  * Version control: [[http://git.or.cz/|Git]]
+
+=== Music ===
+
+  * [[http://www.rush.com|Rush]]
+  * [[http://www.blacksabbath.com|Black Sabbath]]
+  * [[http://www.metallica.com|Metallica]]
+  * [[http://www.pinkfloyd.com|Pink Floyd]]
+  * [[http://www.toolband.com|Tool]]
+
+See my [[http://www.last.fm/user/f0rked|last.fm profile]] for more.
+
+=== I Advocate... ===
+
+[[wp>open source]], freedom, knowledge, intelligence, [[wp>algorithm|optimal algorithms]], mathematics, theory, controversial topics,
+[[http://www.atheists.org/Atheism/|atheism]], [[wp>libertarianism]],
+[[wp>Internet Relay Chat|IRC]], logic, debates, logical debates, technology,
+security, encryption, [[wp>XMPP]],
+[[wp>teetotalism]], [[wp>LaTeX]], efficiency, organization, automation, [[wp>Web syndication|syndication]], elegance, ...
+
+... in no particular order.
+
+== "f0rked" ==
+
+Refer to the [[http://en.wikipedia.org/wiki/Fork_(computing)|fork()]] system call in
+[[http://en.wikipedia.org/wiki/Unix|Unix]] for an explanation. See also: {{{man 2 fork}}}.
+
+[[http://quadpoint.org|f0rked]].
