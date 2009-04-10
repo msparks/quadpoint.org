@@ -1,0 +1,41 @@
+= rfcgraph =
+
+{{{rfcgraph}}} is a simple [[wp>Python]] script that uses [[wp>Graphviz]] to generate a very large graph showing the relationships between [[wp>RFC|RFCs]].
+
+{{ projects/rfcgraph/rfcgraph_zoom.png?200|_rfcgraph zoom}}
+{{ projects/rfcgraph/rfcgraph_small.png?200|_rfcgraph }}
+
+The full version is in PDF format with clickable nodes, and is available here:
+[[http://static.quadpoint.org/rfcgraph/rfcs.pdf]]
+
+* Green arrows indicate an update: "RFCx --green-> RFCy" is read as "RFCx is updated by RFCy"
+* Red arrows indicates an obsoletion: "RFCx --red-> RFCy" is read as "RFCx is obsoleted by RFCy"
+
+== Downloading ==
+
+The source code used to generate the graph can be obtained via {{{git}}}:
+
+{{{
+git clone git://github.com/msparks/rfcgraph.git
+}}}
+
+You can also view [[http://github.com/msparks/rfcgraph/|rfcgraph on github]].
+
+=== Dependencies ===
+
+* [[http://www.python.org|Python]]
+* [[http://www.graphviz.org|Graphviz]]
+* [[http://dkbza.org/pydot.html|pydot]]
+
+== Running ==
+
+To run {{{rfcgraph}}}, you'll need to get a copy of the RFC index XML file
+({{{rfc-index.xml}}}) from [[http://rfc-editor.org/getbulk.html|rfc-editor.org]]. Then run:
+
+{{{
+./rfcgraph.py -h
+}}}
+
+to see the usage.
+
+Note that rfcgraph and graphviz are very memory intensive. On the order of 2-2.5GB of RAM is needed to generate the full graph.
