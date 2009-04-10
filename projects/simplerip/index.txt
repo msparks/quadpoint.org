@@ -1,0 +1,229 @@
+= SimpleRip: Ripping/Encoding DVDs to Xvid with Mencoder =
+
+{{{
+raw:true
+noescape:true
+<script language="javascript" type="text/javascript" src="/static/content/projects/simplerip/simplerip.js"></script>
+}}}
+
+With this document, you can generate the necessary commands to encode a movie directly from a DVD title to an [[wp>Xvid]] file using mencoder, without the need for other applications or helper scripts. Mencoder is part of the [[http://mplayerhq.hu|Mplayer]] tool set, available from [[http://mplayerhq.hu]]. The primary tool follows this paragraph; helper tools and information for filling in the following table can be found below.
+
+== Generate mencoder commandset ==
+
+{{{
+raw:true
+noescape:true
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Setting</th>
+  </tr>
+  <tr>
+    <td><a href="#source_file">Source</a></td>
+    <td><input type="text" id="sr_source" size="12" value="dvd://1" onkeyup="generate();"></td>
+  </tr>
+  <tr>
+    <td><a href="#output_file">Output</a></td>
+    <td><input type="text" id="sr_outfile" size="12" value="movie.avi"  onkeyup="generate();"/></td>
+  </tr>
+  <tr>
+    <td><a href="#audio_and_video_bitrates">Audio bitrate</a></td>
+    <td><input type="text" id="sr_abr" size="2" value="128" onkeyup="generate();" /> kbps</td>
+  </tr>
+  <tr>
+    <td><a href="#audio_and_video_bitrates">Video bitrate</a></td>
+    <td><input type="text" id="sr_vbr" size="2" value="0" onkeyup="generate();" /> kbps</td>
+  </tr>
+  <tr>
+    <td><a href="#volume_gain">Volume gain</a></td>
+    <td><input type="text" id="sr_gain" size="2" value="0" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><a href="#process_nice">Process nice</a></td>
+    <td><input type="text" id="sr_nice" size="2" value="3" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><a href="#crop_and_scale_settings">Crop</a>*</td>
+    <td><input type="text" id="sr_crop" size="12" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><a href="#crop_and_scale_settings">Scale</a>*</td>
+    <td><input type="text" id="sr_scale" size="7" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><a href="#passes">Passes</a></td>
+    <td><input type="text" id="sr_passes" size="1" value="2" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><a href="#extra_options">Extra options</a></td>
+    <td><input type="text" id="sr_extra" onkeyup="generate();" /></td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="generate" onclick="generate();" /></td>
+    <td>fields marked with an asterisk (*) are optional</td>
+  </tr>
+</table>
+}}}
+
+{{{
+raw:true
+noescape:true
+<pre id="mencoder_out">(mencoder commands will magically appear here)</pre>
+}}}
+
+=== Source file ===
+
+This is the input file to read. This will typically be ''dvd://1'', where ''1'' is the DVD title to rip. However, this can also be a .VOB file or any other video file that is readable by Mplayer.
+
+=== Output file ===
+
+Quite obviously the output file. This is the .AVI file that results when the encoding is complete.
+
+=== Audio and video bitrates ===
+
+Use this utility to calculate the appropriate video bitrate for a target output file size. For movies, 128kbps for audio is typically plenty. Some people recommend bumping audio down to 96kbps. The result is slightly less quality audio with a bump up in video bitrate. **It is recommended that a video bitrate of 700kbps or above be used.** If your calculated bitrate is less, adjust the audio bitrate, or consider a larger storage size.
+
+{{{
+raw:true
+noescape:true
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Target size</td>
+    <td><input type="text" id="targetsize" size="2" value="700" /> MB</td>
+  </tr>
+  <tr>
+    <td>Audio bitrate</td>
+    <td><input type="text" id="audiorate" size="2" value="128" /> kbps &nbsp;
+      <input type="submit" value="set above" onclick="s('sr_abr',v('audiorate'))" /></td>
+  </tr>
+  <tr>
+    <td>Length</td>
+    <td>
+      <input type="text" id="length_hr" size="2" /> hr
+      <input type="text" id="length_min" size="2" /> min
+      <input type="text" id="length_sec" size="2" /> sec
+    </td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="calculate" onclick="showBr();" /></td>
+    <td>Video bitrate: <span id="bitrateresult" style="border: 1px dashed #CCCCCC;
+    text-align:center; font-weight: bold">0 kbps</span> &nbsp;
+    <input type="submit" value="set above" onclick="s('sr_vbr',vbr);" /></td>
+  </tr>
+</table>
+}}}
+
+=== Volume gain ===
+
+Value from -10 to 10. The higher the value, the more gain. This is useful for correcting movies that have a subnormal volume.
+
+=== Process nice ===
+
+Value from -20 to 19. Adjusting this value will adjust the priority mencoder is given when encoding. A priority of 0 is normal, a negative priority is higher than normal, and a positive priority is less than normal.
+
+=== Crop and scale settings ===
+
+Cropping is necessary to remove the black borders at the top and bottom of widescreen-format DVDs, and scaling will resize the output video to a smaller pixel by pixel area, resulting in increased quality.
+
+Mplayer can automatically detect the crop settings. To determine the appropriate settings for your video (they will likely change per movie), open a terminal and execute:
+
+{{{
+mplayer dvd://1 -vf cropdetect
+}}}
+
+where {{{dvd://1}} is your source. Play for about 20 seconds and wait until the output is stable. You should see something like:
+
+{{{
+-vf crop=704:464:10:8
+}}}
+
+being repeated over and over again. In this case, the "{{{704:464:10:8}}}" is the important part. Here is the format for crop, from the mencoder manpage:
+
+{{{
+  crop[=w:h:x:y]
+  Crops  the  given  part of the image and discards the rest.  Useful to remove
+  black bands from widescreen movies.
+    w,h  Cropped width and height, defaults to original width and height.
+    x,y  Position of the cropped picture, defaults to center.
+}}}
+
+For determining the scale, decide if the movie widescreen (16:9 ratio) or fullscreen (4:3).
+
+* Widescreen: use scale "{{{704:304}}}" (see below)
+* Fullscreen: use scale "{{{640:480}}}" (see below)
+
+Excerpt on scaling from the mencoder manpage:
+
+{{{
+  scale[=w:h[:interlaced[:chr_drop[:param[:param2[:presize]]]]]]
+   Scales the image with the software scaler (slow) and performs a
+   YUV<->RGB colorspace con-version.
+    <w>,<h>
+     scaled width/height (default: original width/height)
+     NOTE: If -zoom is used, and underlying filters (including libvo) are  inca-
+     pable of scaling, it defaults to d_width/d_height!
+         0:   scaled d_width/d_height
+        -1:   original width/height
+        -2:    Calculate  w/h using the other dimension and the prescaled aspect
+        ratio.
+        -3:   Calculate w/h using the other dimension and  the  original  aspect
+        ratio.
+    <interlaced>
+     Toggle interlaced scaling.
+        0: off (default)
+        1: on
+    <presize>
+     Scale to preset sizes.
+        qntsc:   352x240 (NTSC quarter screen)
+        qpal:    352x288 (PAL quarter screen)
+        ntsc:    720x480 (standard NTSC)
+        pal:     720x576 (standard PAL)
+        sntsc:   640x480 (square pixel NTSC)
+        spal:    768x576 (square pixel PAL)
+}}}
+
+=== Passes ===
+
+Value: 1 or 2. A two-pass encode is recommended. The quality is significantly better with a two-pass, but, as the name suggests, the video is passed over twice, roughly doubling the encode time.
+
+=== Extra options ===
+
+Here you can place extra options to pass to mencoder. Some useful options may be:
+
+{{{
+-ss <time>
+ Seek to given time position. (Start encoding here)
+ EXAMPLE:
+    -ss 56
+        Seeks to 56 seconds.
+    -ss 01:10:00
+        Seeks to 1 hour 10 min.
+-endpos <[[hh:]mm:]ss[.ms]|size[b|kb|mb]>
+ Stop encoding at the given time or byte position.
+ EXAMPLE:
+    -endpos 56
+        Encode only 56 seconds.
+    -endpos 01:10:00
+        Encode only 1 hour 10 minutes.
+    -endpos 100mb
+        Encode only 100 MBytes.
+}}}
+
+== About this document ==
+
+I wrote this 'program' after I read up on encoding in Linux and investigating other solutions. I tried [[http://exit1.org/dvdrip/|DVD::Rip]], but had problems with various bugs, and I craved more automation. I moved on to writing a shell script, but then realized there were too many settings for a simple implementation. Considering various options for GUI setups, the idea to use JavaScript seemed appealing for a couple of reasons:
+
+# I wanted to experiment with the capabilities of JS
+# With this web-based approach, anyone can easily generate the necessary commands to encode the video in the desired way, without installing extra software or messing with commandline switches, which seem to be forgotten just after they're used.
+
+So, this is SimpleRip, the JavaScript mencoder command generator, the product of my experimentation of Linux DVD ripping.
+
+== Further reading ==
+
+* [[http://gentoo-wiki.com/wiki/HOWTO_Mencoder_Introduction_Guide|HOWTO Mencoder Introduction Guide - Gentoo Linux Wiki]]
+* [[http://axljab.homelinux.org/Mencoder_DVD_to_MPEG-4|Mencoder DVD to MPEG-4 - RTFMwiki]] ([[http://ms2.alien.de/0410/images/stories/sectiondoc/video/xvid-mencoder-homelinux.pdf|PDF mirror]])
+
