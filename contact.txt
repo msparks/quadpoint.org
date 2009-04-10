@@ -1,0 +1,44 @@
+= How to contact me =
+
+Let this page be the authoritative source of my contact information. If you
+choose to contact me via IM or IRC, please include your question or comment with your
+introduction to avoid playing IM tag.
+
+== Direct communication ==
+
+=== E-mail ===
+
+Address: {{e.png|email}}
+
+[[wp>Pretty Good Privacy|PGP]]:
+[[http://static.quadpoint.org/pgp/Matt_Sparks_0xD2350400.asc|0xD2350400]]
+(fingerprint {{{0421 D660 2AF0 B353 8846  D4D6 B06C 9185 D235 0400}}})
+
+=== IRC ===
+
+f0rked on [[http://nullirc.net|NullIRC]], [[http://efnet.org|EFnet]], [[http://freenode.net|FreeNode]], [[http://ircnet.org|IRCnet]], [[http://oftc.net|OFTC]].
+
+See: [[wp>IRC]]
+
+=== Jabber (XMPP) ===
+
+Preferred over AIM.
+
+Jabber ID: {{e.png|Jabber ID}}
+
+See: [[wp>Jabber]]; my [[articles/xmpp|XMPP article]].
+
+=== AIM, ICQ, MSN, Y! IM, ... ===
+
+I no longer use these protocols. Please read my article on [[articles/xmpp|XMPP]].
+
+== Social networks ==
+
+=== Facebook ===
+
+[[http://www.facebook.com/profile.php?id=1945270]]
+
+=== Twitter ===
+
+[[http://twitter.com/f0rked|@f0rked]]
+
