@@ -36,9 +36,18 @@ I no longer use these protocols. Please read my article on [[articles/xmpp|XMPP]
 
 === Facebook ===
 
-[[http://www.facebook.com/profile.php?id=1945270]]
+[[http://www.facebook.com/profile.php?id=1945270|Matt Sparks]]
+
+=== LinkedIn ===
+
+[[http://www.linkedin.com/in/jmattsparks|Matt Sparks]]
 
 === Twitter ===
 
 [[http://twitter.com/f0rked|@f0rked]]
+
+=== GitHub ===
+
+[[http://github.com/msparks|msparks]]
+
 
