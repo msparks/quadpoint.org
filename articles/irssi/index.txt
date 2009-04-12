@@ -413,3 +413,4 @@ sites:
    * [[http://lizzie.spod.cx/screenirssi.shtml|Guide to Using Screen and Irssi]] by [[http://lizzie.spod.cx/|Elizabeth Overal]] - Another screen+irssi tutorial with some more information. Thanks for the link, lizzie.
    * [[http://blinkenshell.org|Blinkenshell]] - Free UNIX shell provider.
 
+Article originally written: December 19, 2004.

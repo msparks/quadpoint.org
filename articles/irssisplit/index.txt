@@ -124,3 +124,4 @@ This will create a new container with a new itemless window, without having to u
 
 **Tip #2**: Use a split window to log your hilights. This is described in my [[articles/irssi|guide to Irssi and screen]].
 
+Article originally written: October 2005.
