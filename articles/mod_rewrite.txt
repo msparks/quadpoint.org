@@ -1,0 +1,185 @@
+= mod_rewrite Demystified: A Brief Guide With Resources =
+
+[[http://httpd.apache.org/docs/mod/mod_rewrite.html|mod_rewrite]] is a useful
+[[http://httpd.apache.org|Apache]] module that allows internal redirection of
+URLs. In short, it turns URLs like this:
+
+{{{
+http://domain.com/yoursite.php?page=contact&info=email
+}}}
+
+into:
+
+{{{
+http://domain.com/contact/email
+}}}
+
+Many goals can be achieved using the flexible design of mod_rewrite. It is possible to silently redirect www.domain.com to domain.com, redirect based on referrer or language, create virtual shortcuts for URLs, and more. This guide will cover the basics of mod_rewrite and how to accomplish some of the ideas named here.
+
+== Enable mod_rewrite ==
+
+The first step is obviously to load the module. It is installed by default, but
+not enabled. Most hosting companies automatically enable it for you, but if you are running your own Apache web server, you can enable it by uncommenting the following two lines in your ''httpd.conf'', and restart Apache:
+
+{{{
+#LoadModule rewrite_module modules/mod_rewrite.so
+#AddModule mod_rewrite.c
+}}}
+
+tip: Hint: You can tell if mod_rewrite is loaded by creating a {{{phpinfo.php}}} file
+with the contents {{{<?php phpinfo(); ?>}}} and searching for "Loaded Modules"
+in your browser. This trick does require a working PHP installation, however.
+
+== .htaccess ==
+
+All of your mod_rewrite rules will go in {{{.htaccess}}} files. Anyone
+unfamiliar with what this file is or does should read the
+[[http://httpd.apache.org/docs/howto/htaccess.html|Apache Tutorial]] on
+{{{.htaccess}}} files before continuing.
+
+note: mod_rewrite rules can also be placed directly in server configs and virtualhost
+configs, but for simplicity, {{{.htaccess}}} usage is discussed here.
+
+== RewriteRule ==
+
+Before going any further, put this at the top of your {{{.htaccess}}} file:
+
+{{{
+RewriteEngine On
+}}}
+
+This will turn on rewriting and Apache will parse any further rules regarding mod_rewrite.
+
+The first command to learn is the simplest, {{{RewriteRule}}}. The syntax for this command is:
+
+{{{
+RewriteRule Pattern Substitution [Flag(s)]
+}}}
+
+where {{{Pattern}}} is a [[wp>regular expression]], {{{Substitution}}} is what
+{{{Pattern}}} is replaced with, and {{{Flag(s)}}} are included to specify how
+the redirect should act. The pattern will match the request to the site.
+
+Mod_rewrite is best learned through the observation of several
+examples, so here are some. These lines would go directly into a {{{.htaccess}}}
+file, below the {{{RewriteEngine On}}} declaration.
+
+{{{
+RewriteRule ^page/(.*)$ site.php?page=$1 [L]
+}}}
+
+This looks a little cryptic, especially if you're not familiar with
+[[wp>regular expressions]]. The pattern {{{^page/(.*)$}}} will match
+{{{domain.com/page/anything}}}. The {{{^}}} is a regexp character to require
+that {{{page..}}} is at the start of the request. Likewise, {{{$}}} matches the
+end of the request. This ensures that nothing can come before or after the
+explicitly defined pattern in the request. Specifically, a request of
+{{{subdirectory/page/something}}} will not be matched. The {{{.*}}} will match
+//zero or more// ({{{*}}}) occurrences of a single character ({{{.}}}). The fact
+that {{{.*}}} is in parentheses will put whatever it matches into a **numeric
+variable**. Since it is the first set of parentheses in the pattern, the match
+will be stored in {{{$1}}} for the {{{Substitution}}} to use.
+
+Any requests that match this pattern ({{{page/this}}}, {{{page/that}}},
+{{{page/other_thing}}}, but not {{{other/page/foo}}}) will be replaced by
+{{{site.php?page=$1}}} where {{{$1}}} represents what was matched by the
+parentheses. For example, if the request was {{{page/contact}}}, the user would
+essentially be hitting {{{site.php?page=contact}}}.
+
+The final piece of a {{{RewriteRule}}} is the flag(s) provided. In this case,
+the {{{L}}} flag is specified, which means "Last." After this rule is matched,
+no more will be processed. By default, mod_rewrite will redirect //internally//.
+That is, the user browsing the site will have no idea that he or she is actually
+being redirected. The URL in the browser will remain as the cloaked one. If,
+however, it was necessary to literally redirect the user to another page, the
+{{{R}}} flag can be specified:
+
+{{{
+RewriteRule ^oldpage.html newpage.html [R,L]
+}}}
+
+Notice here that both {{{R}}} and {{{L}}} flags are specified. Multiple flags are separated by commas.
+
+Another example:
+
+{{{
+RewriteRule ^$ newsite [R,L]
+}}}
+
+This simple rule will redirect {{{http://domain.com/}}} to
+{{{http://domain.com/newsite}}}. Because of the {{{R}}} flag, a {{{Location:}}}
+header will be sent to the browser and the user will be redirected. After this
+rule is matched, all additional rules are ignored ({{{L}}} flag).
+
+== RewriteCond ==
+
+{{{RewriteRule}}} alone can only do so much. However, together with
+{{{RewriteCond}}}, URL rewriting based on certain conditions is possible. The syntax is:
+
+{{{
+RewriteCond Test_Subject Condition
+}}}
+
+{{{Test_Subject}}} is basically a variable known to Apache. Possible candidates
+include: {{{HTTP_USER_AGENT}}}, {{{HTTP_REFERER}}}, {{{HTTP_COOKIE}}},
+{{{HTTP_FORWARDED}}}, {{{HTTP_HOST}}}, {{{HTTP_PROXY_CONNECTION}}},
+{{{HTTP_ACCEPT}}}, {{{REMOTE_ADDR}}}, {{{REMOTE_HOST}}}, {{{REMOTE_USER}}}, and
+several others. The {{{Condition}}} is a pattern to match against the variable.
+Note that pattern matching against a variable's content is a typical use of
+{{{RewriteCond}}}. Other ideas are provided in the Resources section below.
+
+Examples of {{{RewriteCond}}} with {{{RewriteRule}}}:
+
+{{{
+RewriteCond %{HTTP_HOST} ^www\.quadpoint\.org$ [NC]
+RewriteRule ^(.*)$ http://quadpoint.org/$1 [R=301,L]
+}}}
+
+This set of rules will look at the {{{HTTP_HOST}}} variable. This information is
+sent by browsers when viewing websites. Quite simply, the text between
+{{{http://}}} and the next {{{/}}} is stored in this variable.
+If the host matches "www.quadpoint.org" exactly, the user is silently (but
+publicly) redirected from {{{http://www.quadpoint.org/whatever}}} to
+{{{http://quadpoint.org/whatever}}}. Notice this time {{{=301}}} is specified
+with the {{{R}}} flag. {{{301}}} is the HTTP status code for "moved permanently" and is
+sent along with the headers during the redirect. The {{{NC}}} flag is a single
+flag to make the pattern **N**ot **C**ase sensitive. It can also be used for
+patterns in {{{RewriteRule}}}.
+
+{{{
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla.*MSIE [456]\.0.*
+RewriteRule ^$ evil.html [L]
+}}}
+
+.. will redirect any Internet Explorer users (or anyone with a User Agent
+beginning with {{{Mozilla}}} (most do)) and containing {{{MSIE}}} followed by a
+space and {{{4.0}}}, {{{5.0}}}, or {{{6.0}}} to {{{evil.html}}}.
+
+== Logging ==
+
+If you'd like an idea of what exactly is going on, for debugging purposes or
+just out of curiosity, mod_rewrite can log to a file automatically. Add to
+{{{.htaccess}}}:
+
+{{{
+RewriteLog "/home/user/www/logs/rewrite.log"
+RewriteLogLevel 5
+}}}
+
+Where the {{{RewriteLog}}} directive is given a proper file location. Make sure
+the given file has the correct permissions. {{{RewriteLogLevel}}} ranges from
+{{{0}}} (no logging) to {{{9}}} (very verbose logging). It is recommended that
+logging only be used for testing purposes for performance reasons.
+
+== Resources and additional reading ==
+
+mod_rewrite is a very powerful tool and has several other applications than
+those listed here. To learn more, consider these resources:
+
+* [[http://www.sitepoint.com/article/guide-url-rewriting|mod_rewrite: A Beginner's Guide to URL Rewriting]] by Tamas Turcsanyi
+* [[http://www.workingwith.me.uk/articles/scripting/mod_rewrite|mod_rewrite, a beginner's guide (with examples)]] another excellent rewriting guide by Neil Crosby
+* [[http://httpd.apache.org/docs/mod/mod_rewrite.html|Apache module mod_rewrite]] at apache.org
+* [[http://httpd.apache.org/docs/misc/rewriteguide.html|Apache URL Rewriting Guide]] at apache.org
+* [[http://www.ilovejackdaniels.com/apache/mod_rewrite-cheat-sheet|mod_rewrite cheat sheet]] compiled by [[http://ilovejackdaniels.com|ilovejackdaniels.com]] - excellent resource
+
+Article originally written: June 2, 2005.
