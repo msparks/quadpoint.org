@@ -26,11 +26,11 @@ Preferred over AIM.
 
 Jabber ID: {{e.png|Jabber ID}}
 
-See: [[wp>Jabber]]; my [[articles/xmpp|XMPP article]].
+See also: [[wp>Jabber]]
 
 === AIM, ICQ, MSN, Y! IM, ... ===
 
-I no longer use these protocols. Please read my article on [[articles/xmpp|XMPP]].
+I no longer use these protocols.
 
 == Social networks ==
 
