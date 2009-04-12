@@ -50,4 +50,6 @@ I no longer use these protocols. Please read my article on [[articles/xmpp|XMPP]
 
 [[http://github.com/msparks|msparks]]
 
+=== Last.fm ===
 
+[[http://www.last.fm/user/f0rked|f0rked]]
