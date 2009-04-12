@@ -1,0 +1,28 @@
+= Irssi Documentation and Resources =
+
+Below is a list of links to various pages on the web regarding Irssi. On them
+you will find general Irssi documentation, scripts for Irssi, and other tips and
+tricks. If you have a link that you would like to be added to this page,
+[[contact|contact]] me.
+
+== Locally hosted resources ==
+
+* [[articles/irssi]] - a general howto on using the client together with screen.
+* [[articles/irssisplit]] - Split windows explained: how to add and manipulate multiple containers in irssi.
+* [[http://static.quadpoint.org/irssi-docs/help-full.html|/help]] - yes, /help. This is an HTML-ized version of the information gathered from /help.
+
+== Offical resources ==
+
+* [[http://irssi.org/documentation|Official docs]] - The official documentation on irssi.org. This is a necessary read; many common questions are answered here.
+* [[http://scripts.irssi.org|Official scripts archive]] - Large collection of scripts for use with Irssi.
+* [[http://irssi.org/documentation/settings|Settings]] - Explanations of the variables modified with ''/set''.
+
+== Scripts, Tips, Tricks ==
+
+* [[projects/irssiscripts]] - my collection of scripts
+* [[http://wouter.coekaerts.be/site/irssi/irssi|Wouter Coekaerts]] - aka coekie, author of many scripts. Coekie's site contains information on split windows, F-keys, and other tips.
+* [[https://dgl.cx/irssi/|DgL]] - Author of several popular scripts
+* [[http://anti.teamidiot.de/|Nei]] - author of **awl** (advanced windowlist), a powerful window-listing script based on chanact.
+* [[http://met.death.pl/scripts/irssi/|met]] - met's small collection of useful scripts and fixes to existing scripts.
+* [[http://juerd.nl/site.plp/irssi|Juerd]] - author of many Irssi scripts and a scripting tutorial.
+* [[http://www.garion.org/irssi/|Garion]] - Garion wrote HOSC (Hybrid Oper Script Collection) and has some useful tips and information to offer.
