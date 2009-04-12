@@ -1,0 +1,88 @@
+= Infinite Machine =
+
+Infinite Machine, or infmx, is the custom web engine that powers
+[[http://quadpoint.org|quadpoint.org]]. I started this project because I
+couldn't find a similar project that would do what I wanted how I wanted. It is
+written in Python and uses the [[http://www.django.com|Django web framework]].
+
+== Features ==
+
+[[projects/infinitemachine|Infinite Machine]] has features similar to other
+wikis, namely [[http://wikipedia.org|Wikipedia]] and
+[[http://www.dokuwiki.org|DokuWiki]]. Here are some of the major features that
+have been implemented.
+
+=== Wiki syntax ===
+
+The primary component of Infinite Machine is a wiki parser. A key feature I
+wanted in my website software is the ability to write content in wiki-like
+syntax instead of HTML. I settled on the [[http://www.wikicreole.org/|Creole]]
+specification, and Infinite Machine uses the parser from
+[[http://code.google.com/p/python-creole/|python-creole]].
+
+See the [[projects/infinitemachine/syntax|syntax]] page for examples.
+
+=== Git storage backend ===
+
+Document content and resources for documents, such as document-specific images,
+are read directly from a [[http://git.or.cz|git]] repository. This has wonderful
+side effects and avoids reinventing the wheel for content management. Publishing
+can be as easy as pushing to a repository.
+
+=== Aggressive caching ===
+
+Efficiency is an important element in Infinite Machine's design. Fetching, parsing and
+rendering pages is costly, often taking several hundred milliseconds for a
+single page request. Therefore, caching is essential.
+[[http://www.danga.com/memcached/|Memcached]] is used to reduce the request time
+to a few milliseconds.
+
+=== Syntax highlighting ===
+
+When source code is included in a document, it is easy to add syntax
+highlighting in infmx. The [[http://pygments.org/|Pygments]] library is used to
+highlight code snippets like this:
+
+{{{
+lang:c
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  printf("syntax highlighting is awesome\n");
+  return 0;
+}
+}}}
+
+=== Structure extraction ===
+
+In true wiki spirit, Infinite Machine extracts the document title, summary, and
+headers to be displayed individually by a template. The summary is considered
+to be everything between the title header and the second level header. The table
+of contents is automatically generated from the header information and is
+displayed after the summary, as shown at the top of this page.
+
+=== Planned features ===
+
+Infmx is still a young project and several more features are in the works:
+
+* a blog component
+** git metadata will be heavily used here to reproduce common blog features
+* automatic pre-caching after the content repository is updated
+** this will allow for very long cache retention times, and allow content to update only when absolutely necessary.
+* feeds (RSS, Atom) for content updates and blog updates
+
+== Downloading ==
+
+Infinite Machine is an open source project. It is hosted on
+[[http://github.com|GitHub]] at [[http://github.com/msparks/infinitemachine]].
+
+It can be cloned with:
+
+{{{
+git clone git://github.com/msparks/infinitemachine.git
+}}}
+
+No fancy documentation is available yet. Infinite Machine is still new and may not
+be ready for general use, but feel free to submit bugs and patches.
+

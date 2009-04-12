@@ -1,0 +1,17 @@
+= alphasign =
+
+alphasign is a Python API for [[http://www.alpha-american.com|Alpha American]]
+LED signs, such as the [[http://www.betabrite.com|Betabrite]]. It implements the
+[[http://www.alpha-american.com/p-alpha-communications-protocol.html|Alpha Communications Protocol]].
+
+This project is still under development as of April 2009.
+
+Source code is hosted on [[http://github.com|GitHub]] at
+[[http://github.com/msparks/alphasign|msparks/alphasign]] and can be obtained
+with:
+
+{{{
+git clone git://github.com/msparks/alphasign.git
+}}}
+
+The sphinx-generated [[/projects/alphasign/docs|alphasign documentation]] is also available.

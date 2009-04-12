@@ -1,6 +1,13 @@
 = Projects =
 
-Projects I've started or worked on. Many of my projects' pages are in progress and not yet shown here.
+This is a collection of public projects I've started or worked on.
+
+== alphasign ==
+
+An implementation of the Alpha Sign Communications Protocol in Python. It is
+used to control Alpha American LED signs.
+
+View project: [[projects/alphasign]]
 
 == cscredits ==
 
@@ -14,11 +21,23 @@ Configuration files.
 
 View project: [[projects/dotfiles]]
 
+== Infinite Machine ==
+
+The engine that powers this website.
+
+View project: [[projects/infinitemachine]]
+
 == Irssi scripts ==
 
 A collection of scripts I have written for [[http://irssi.org|Irssi]].
 
 View project: [[projects/irssiscripts]]
+
+== Pastee ==
+
+My [[wp>pastebin]].
+
+View project: [[projects/pastee]]
 
 == rfcgraph ==
 
@@ -31,3 +50,9 @@ View project: [[projects/rfcgraph]]
 An easy way to rip DVDs on Linux.
 
 View project: [[projects/simplerip]]
+
+== svcshare ==
+
+A distributed queueing system.
+
+View project: [[projects/svcshare]]
