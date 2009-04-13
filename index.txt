@@ -1,0 +1,19 @@
+= The website of Matt Sparks =
+
+Hi, I'm Matt, and this is my website. This is my outlet for documenting my
+[[projects|projects]] and other published [[works|works]].
+
+== Site updates ==
+
+* 2009-04-13: [[http://quadpoint.org|quadpoint.org]] is now running on [[projects/infinitemachine|Infinite Machine]].
+
+== Abridged site index ==
+
+* [[works|Works]]\\
+Articles and papers I've written, and talks I've given.
+* [[projects|Projects]]\\
+Projects I'm working on.
+* [[bio|Bio]]\\
+More about me.
+* [[contact|Contact]]\\
+Contact me.
