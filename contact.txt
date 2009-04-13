@@ -32,7 +32,7 @@ See also: [[wp>Jabber]]
 
 I no longer use these protocols. Use XMPP instead. If you have a Gmail account,
 you can use your Google account credentials to login to Google's
-[[http://www.google.com/talk/otherclients.html|Talk service]].
+[[http://www.google.com/talk/otherclients.html|Talk service]], which uses XMPP.
 
 == Social networks ==
 
