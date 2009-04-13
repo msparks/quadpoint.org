@@ -30,7 +30,8 @@ See also: [[wp>Jabber]]
 
 === AIM, ICQ, MSN, Y! IM, ... ===
 
-I no longer use these protocols.
+I no longer use these protocols. Use XMPP instead. If you have a Gmail account,
+you automatically have a Jabber account as well.
 
 == Social networks ==
 
