@@ -56,10 +56,12 @@ function calcbr(targetsize, audiosize, length, coverhead)
 
 function showBr()
 {
-  var length = v("length_hr") * 3600 + v("length_min") * 60 + v("length_sec");
+  var length = (v("length_hr") * 3600 + v("length_min") * 60 +
+                v("length_sec") * 1);
   var audiosize = bitrate2bytes(v("audiorate"), length);
   var tsize = v("targetsize") * 1024 * 1024;
   var overhead = 0.7;
+
   var bitrate = calcbr(tsize, audiosize, length, overhead);
   vbr = bitrate;
   var e = document.getElementById("bitrateresult");
@@ -132,12 +134,12 @@ function generate()
 {
   var cmds = "# remove conflicting files\n";
   cmds += "rm -f divx2pass.log frameno.avi\n\n";
-  cmds += aPass()+"\n";
+  cmds += aPass() + "\n";
   if (v("sr_passes") == 1) {
-    cmds += vPass(0)+"\n";
+    cmds += vPass(0) + "\n";
   } else {
-    cmds += vPass(1)+"\n";
-    cmds += vPass(2)+"\n";
+    cmds += vPass(1) + "\n";
+    cmds += vPass(2) + "\n";
   }
   cmds += "# done\n";
   var e = document.getElementById("mencoder_out");
