@@ -66,11 +66,9 @@ displayed after the summary, as shown at the top of this page.
 
 Infmx is still a young project and several more features are in the works:
 
-* a blog component
-** git metadata will be heavily used here to reproduce common blog features
 * automatic pre-caching after the content repository is updated
 ** this will allow for very long cache retention times, and allow content to update only when absolutely necessary.
-* feeds (RSS, Atom) for content updates and blog updates
+* feeds (RSS, Atom) for content updates
 
 == Downloading ==
 
