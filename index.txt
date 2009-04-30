@@ -5,6 +5,7 @@ Hi, I'm Matt, and this is my website. This is my outlet for documenting my
 
 == Site updates ==
 
+* 2009-04-30: [[/blog|blog]] added.
 * 2009-04-13: [[http://quadpoint.org|quadpoint.org]] is now running on [[projects/infinitemachine|Infinite Machine]].
 
 == Abridged site index ==
