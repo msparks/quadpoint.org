@@ -135,7 +135,8 @@ Mplayer can automatically detect the crop settings. To determine the appropriate
 mplayer dvd://1 -vf cropdetect
 }}}
 
-where {{{dvd://1}} is your source. Play for about 20 seconds and wait until the output is stable. You should see something like:
+where {{{dvd://1}}} is your source. Play for about 20 seconds and wait until the output is 
+stable. You should see something like:
 
 {{{
 -vf crop=704:464:10:8
