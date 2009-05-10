@@ -356,7 +356,8 @@ You can see all available settings (which will be listed in your status window) 
 /set awl_block -15
 }}}
 
-If you like the setup, type {{{/save}}} to keep it. You can revert to the old act setup using {{{/script unload awl}}} and {{{/statusbar window add -after lag -priority 10 act}}}.
+If you like the setup, type {{{/save}}} to keep it. You can revert to the old
+act setup using {{{/script unload adv_windowlist}}} and {{{/statusbar window add -after lag -priority 10 act}}}.
 
 
 == Irssi Command Reference ==
