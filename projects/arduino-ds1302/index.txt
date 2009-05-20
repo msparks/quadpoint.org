@@ -1,0 +1,5 @@
+= DS1302 RTC library for Arduino =
+
+This is a placeholder for now.
+
+Code should be available at [[http://github.com/msparks/arduino-ds1302]].
