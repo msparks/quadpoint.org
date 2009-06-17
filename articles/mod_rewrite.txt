@@ -23,8 +23,10 @@ not enabled. Most hosting companies automatically enable it for you, but if you 
 
 {{{
 #LoadModule rewrite_module modules/mod_rewrite.so
-#AddModule mod_rewrite.c
 }}}
+
+On Apache 1.3, an {{{#AddModule mod_rewrite.c}}} line will also need to be
+uncommented.
 
 tip: Hint: You can tell if mod_rewrite is loaded by creating a {{{phpinfo.php}}} file
 with the contents {{{<?php phpinfo(); ?>}}} and searching for "Loaded Modules"
