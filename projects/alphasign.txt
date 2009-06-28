@@ -1,17 +1,35 @@
 = alphasign =
 
-alphasign is a Python API for [[http://www.alpha-american.com|Alpha American]]
+{{{alphasign}}} is a Python API for [[http://www.alpha-american.com|Alpha American]]
 LED signs, such as the [[http://www.betabrite.com|Betabrite]]. It implements the
 [[http://www.alpha-american.com/p-alpha-communications-protocol.html|Alpha Communications Protocol]].
 
-This project is still under development as of April 2009.
+== Installation ==
 
-Source code is hosted on [[http://github.com|GitHub]] at
+{{{alphasign}}} is [[http://pypi.python.org/pypi/alphasign|listed]] in the
+[[http://pypi.python.org|Python Package Index]]. It can be installed with
+[[http://peak.telecommunity.com/DevCenter/setuptools|easy_install]]:
+
+{{{
+sudo easy_install -U alphasign
+}}}
+
+== Documentation ==
+
+This project is documented with [[http://sphinx.pocoo.org/|Sphinx]]. The
+generated documentation is [[/projects/alphasign/docs|available online]].
+
+== Contributing ==
+
+As of June 2009, I will be away from my Betabrite (classic) for quite some time
+and will be unable to add new features until I get another sign. If you find
+bugs or implement new features in {{{alphasign}}}, please contact me so I can
+integrate your changes.
+
+The source code is hosted on [[http://github.com|GitHub]] at
 [[http://github.com/msparks/alphasign|msparks/alphasign]] and can be obtained
 with:
 
 {{{
 git clone git://github.com/msparks/alphasign.git
 }}}
-
-The sphinx-generated [[/projects/alphasign/docs|alphasign documentation]] is also available.
