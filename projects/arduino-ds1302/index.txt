@@ -1,5 +1,27 @@
 = DS1302 RTC library for Arduino =
 
-This is a placeholder for now.
+This project is a library for the [[http://arduino.cc|Arduino]] platform. It
+provides a simple interface to the
+[[http://www.maxim-ic.com/quick_view2.cfm/qv_pk/2685/t/al|Maxim DS1302]]
+timekeepking chip. It allows Arduino projects to keep accurate time easily.
 
-Code should be available at [[http://github.com/msparks/arduino-ds1302]].
+== Downloading ==
+
+The code is hosted by [[http://github.com|GitHub]] at [[http://github.com/msparks/arduino-ds1302]].
+
+It can be cloned with:
+
+{{{
+git clone git://github.com/msparks/arduino-ds1302.git DS1302
+}}}
+
+You may also download the latest version in a .tar or .zip:
+
+|[[http://github.com/msparks/arduino-ds1302/tarball/master|.tar]] | [[http://github.com/msparks/arduino-ds1302/zipball/master|.zip]] |
+
+== Installing ==
+
+Place the {{{DS1302}}} directory in {{{hardware/libraries}}} subdirectory of the
+Arduino base directory.
+
+A simple example is included with the code.
