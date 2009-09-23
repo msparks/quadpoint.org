@@ -4,7 +4,10 @@
 
 [[http://quadpoint.org|Matt Sparks]] received his first dose of artificial light in a hospital in Marion, Illinois in early [[http://en.wikipedia.org/wiki/1986|1986]]. He lived in Marion until age five, when he made the journey to his so-called hometown of Charleston, Illinois (home of [[http://www.eiu.edu|EIU]]). Matt spent his elementary years in Charleston. Partly into the freshman year at [[http://www.charleston.k12.il.us/CHS|Charleston High School]], he moved to the Springfield, Illinois area. Matt finished off his high school career in Chatham at [[http://ghsonline.net|Glenwood High School]] with the class of 2004.
 
-In December 2008, he completed his B.S. in [[http://www.cs.uiuc.edu|Computer Science]] in the [[http://www.engr.uiuc.edu|College of Engineering]] at the [[http://www.uiuc.edu|University of Illinois at Urbana-Champaign]] (UIUC). Starting in Fall 2009, he will be at [[http://stanford.edu|Stanford University]] working on his master's degree in Computer Science.
+In December 2008, he completed his B.S. in [[http://www.cs.uiuc.edu|Computer Science]] in the [[http://www.engr.uiuc.edu|College of Engineering]] at the [[http://www.uiuc.edu|University of Illinois at Urbana-Champaign]] (UIUC).
+
+Matt is now studying at [[http://stanford.edu|Stanford University]] for a master's
+degree in Computer Science.
 
 == Interests ==
 
@@ -15,10 +18,9 @@ In December 2008, he completed his B.S. in [[http://www.cs.uiuc.edu|Computer Sci
   * IRC client: [[http://irssi.org|irssi]]
   * IM: [[http://bitlbee.org|BitlBee]]
   * Mail reader: [[http://gmail.com|Gmail]], [[http://mutt.org|mutt]]
-  * News reader: [[http://mutt.org|mutt]]
   * Feeds: [[http://google.com/reader|Google Reader]]
   * Editor: [[http://vim.org|Vim]] + [[http://www.gnu.org/software/emacs/|Emacs]] (mixed keybindings -- see [[projects/dotfiles|dotfiles]])
-  * Window manager: [[http://xmonad.org|xmonad]], [[http://xfce.org|Xfce]], [[http://fluxbox.org|fluxbox]]
+  * Window manager (GNU/Linux): [[http://xmonad.org|xmonad]], [[http://xfce.org|Xfce]], [[http://fluxbox.org|fluxbox]]
   * Language (interpreted): [[http://python.org|Python]], [[http://perl.com|Perl]]
   * Language (compiled): [[http://en.wikipedia.org/wiki/C_(programming_language)|C/C++]]
   * Version control: [[http://git.or.cz/|Git]]
