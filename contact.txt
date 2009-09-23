@@ -16,7 +16,7 @@ Address: {{e.png|email}}
 
 === IRC ===
 
-f0rked on [[http://nullirc.net|NullIRC]], [[http://efnet.org|EFnet]], [[http://freenode.net|FreeNode]], [[http://ircnet.org|IRCnet]], [[http://oftc.net|OFTC]].
+ms on [[http://nullirc.net|NullIRC]]; msparks on [[http://efnet.org|EFnet]], [[http://freenode.net|FreeNode]], [[http://ircnet.org|IRCnet]]
 
 See: [[wp>IRC]]
 
