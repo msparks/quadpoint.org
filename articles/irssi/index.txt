@@ -387,11 +387,11 @@ class of these troublesome characters in the PuTTY options under {{{Window -> Se
 characters (which is {{{'2'}}} at the time of this writing). Essentially, this
 changes what PuTTY considers to be a 'word' when double-clicking.
 
-Linux terminal emulator programs also have this problem. I use rxvt-unicode
-(urxvt), which has a resource option called {{{cutchars}}} (read the
-[[http://www.die.net/doc/linux/man/man1/urxvt.1.html|manpage for urxvt]]). The
-default setting {{{BACKSLASH `"'&()*,;<=>?@[]{|}}}} breaks 'words'
-on any of those characters.
+Linux terminal emulator programs also have this problem. The terminal emulator
+rxvt-unicode (urxvt), which has a resource option called {{{cutchars}}} (read
+the [[http://www.die.net/doc/linux/man/man1/urxvt.1.html|manpage for urxvt]]).
+The default setting {{{BACKSLASH `"'&()*,;<=>?@[]{|}}}} breaks 'words' on any of
+those characters.
 
 However, adding this to your {{{~/.Xdefaults}}} file will adjust urxvt so that URLs
 containing {{{& , = ? ;}}} will not break words so they can be selected
@@ -400,6 +400,20 @@ entirely with one double-click:
 {{{
 URxvt*cutchars: `"()'*<>[]{|}
 }}}
+
+=== Launching URLs from rxvt-unicode (urxvt) ===
+
+URLs can be launched from urxvt with something like the following in your
+{{{~/.Xdefaults}}}:
+
+{{{
+urxvt*perl-lib:         /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:  default,matcher
+urxvt*matcher.button:   1
+urxvt*urlLauncher:      /usr/bin/firefox
+}}}
+
+(Thanks to anrxc for this tip.)
 
 == Resources ==
 
