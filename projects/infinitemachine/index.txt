@@ -62,14 +62,6 @@ to be everything between the title header and the second level header. The table
 of contents is automatically generated from the header information and is
 displayed after the summary, as shown at the top of this page.
 
-=== Planned features ===
-
-Infmx is still a young project and several more features are in the works:
-
-* automatic pre-caching after the content repository is updated
-** this will allow for very long cache retention times, and allow content to update only when absolutely necessary.
-* feeds (RSS, Atom) for content updates
-
 == Downloading ==
 
 Infinite Machine is an open source project. It is hosted on
