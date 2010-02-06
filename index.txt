@@ -5,6 +5,7 @@ Hi, I'm Matt, and this is my website. This is my outlet for documenting my
 
 == Site updates ==
 
+* 2010-02-06: Infinite caching implemented and enabled in [[projects/infinitemachine|Infinite Machine]]. Site should be speedy.
 * 2009-04-30: [[/blog|blog]] added.
 * 2009-04-13: [[http://quadpoint.org|quadpoint.org]] is now running on [[projects/infinitemachine|Infinite Machine]].
 
