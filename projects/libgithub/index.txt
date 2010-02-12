@@ -1,0 +1,67 @@
+= libgithub: a JavaScript library for displaying GitHub data =
+
+libgithub uses the [[http://develop.github.com|GitHub API]] to display
+interesting activity from your [[http://github.com|GitHub]] account. Currently,
+the library can create commit badges, like the one shown below. However,
+libgithub is intended as a framework to easily display GitHub information on
+your websites and blogs.
+
+libgithub v1.0 was released February 12, 2010.
+
+== Demo ==
+
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks', 'libgithub')).targetIs('#commit');
+});
+</script>
+<div id="commit"></div>
+}}}
+
+This badge was generated with:
+
+{{{
+lang: html
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks', 'libgithub')).targetIs('#commit');
+});
+</script>
+<div id="commit"></div>
+}}}
+
+== Download ==
+
+libgithub is [[http://github.com/msparks/libgithub|available on GitHub]]. You
+can clone the repository with:
+
+{{{
+git clone git://github.com/msparks/libgithub.git
+}}}
+
+Alternatively, these downloads are also available:
+
+* [[http://github.com/msparks/libgithub/zipball/master|zipball]] (master)
+* [[http://github.com/msparks/libgithub/tarball/master|tarball]] (master)
+* [[http://github.com/msparks/libgithub/zipball/v1.0|v1.0 zipball]]
+* [[http://github.com/msparks/libgithub/tarball/v1.0|v1.0 tarball]]
+
+== Documentation ==
+
+All of the information you need to install and use libgithub can be found at the [[http://quadpoint.org/projects/libgithub/docs/|libgithub documentation]].
+
+== Contributing ==
+
+This project is new and in need of contributors. If you would like to add a new
+feature to libgithub, [[http://github.com/msparks/libgithub|fork the project]]
+on GitHub. If you have questions, [[contact|contact]] me.
+
+Some ideas yet to be implemented:
+
+* repository lists
+* recent activity feeds
+* project activity graphs
