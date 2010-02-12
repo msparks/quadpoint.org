@@ -108,7 +108,7 @@ $(window).load(function () {
 <div id="libgithub-commit"></div>
 }}}
 
-View project: [[projects/libgithub]]
+View project: [[projects/libgithub|libgithub]]
 
 == Pastee ==
 
