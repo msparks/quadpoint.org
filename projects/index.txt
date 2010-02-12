@@ -7,13 +7,39 @@ This is a collection of public projects I've started or worked on.
 An implementation of the Alpha Sign Communications Protocol in Python. It is
 used to control Alpha American LED signs.
 
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','alphasign')).
+    targetIs('#alphasign-commit');
+});
+</script>
+<div id="alphasign-commit"></div>
+}}}
+
 View project: [[projects/alphasign]]
 
 == arduino-ds1302 ==
 
 DS1302 Real Time Clock (RTC) library for Arduino.
 
-View project: [[projects/arduino-ds1302]]
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','arduino-ds1302')).
+    targetIs('#arduino-ds1302-commit');
+});
+</script>
+<div id="arduino-ds1302-commit"></div>
+}}}
+
+View project: [[projects/arduino-ds1302|arduino-ds1302]]
 
 == cscredits ==
 
@@ -31,13 +57,58 @@ View project: [[projects/dotfiles]]
 
 The engine that powers this website.
 
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','infinitemachine')).
+    targetIs('#infinitemachine-commit');
+});
+</script>
+<div id="infinitemachine-commit"></div>
+}}}
+
 View project: [[projects/infinitemachine]]
 
 == Irssi scripts ==
 
 A collection of scripts I have written for [[http://irssi.org|Irssi]].
 
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','irssiscripts')).
+    targetIs('#irssiscripts-commit');
+});
+</script>
+<div id="irssiscripts-commit"></div>
+}}}
+
 View project: [[projects/irssiscripts]]
+
+== libgithub ==
+
+A JavaScript library to display GitHub data on websites.
+
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','libgithub')).
+    targetIs('#libgithub-commit');
+});
+</script>
+<div id="libgithub-commit"></div>
+}}}
+
+View project: [[projects/libgithub]]
 
 == Pastee ==
 
@@ -60,5 +131,18 @@ View project: [[projects/simplerip]]
 == svcshare ==
 
 A distributed queueing system.
+
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','svcshare')).
+    targetIs('#svcshare-commit');
+});
+</script>
+<div id="svcshare-commit"></div>
+}}}
 
 View project: [[projects/svcshare]]
