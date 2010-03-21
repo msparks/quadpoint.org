@@ -2,7 +2,7 @@
 
 == Background ==
 
-I have been using Linux as my primary desktop operating system since July of 2003. For quite a while, I used X-Chat as my primary IRC client, but I wasn't impressed with the features X-Chat offered. It seemed uncustomizable and static. After a few months of using X-Chat, I tried [[http://irssi.org|Irssi]] and immediately found it to be the most intuitive and easy to use IRC client yet. It has the features I want in an IRC client and I have been using [[http://irssi.org|Irssi]] ever since. I have already succeeded in converting a few of my friends to Irssi, and with this guide, I hope to show the light to others.
+For quite a while, I used X-Chat as my primary IRC client, but I wasn't impressed with the features X-Chat offered. It seemed uncustomizable and static. After a few months of using X-Chat, I tried [[http://irssi.org|Irssi]] and immediately found it to be the most intuitive and easy to use IRC client yet. It has the features I want in an IRC client and I have been using [[http://irssi.org|Irssi]] ever since. I have already succeeded in converting a few of my friends to Irssi, and with this guide, I hope to show the light to others.
 
 **Help spread the word of Irssi, link to this guide!**
 
@@ -45,7 +45,7 @@ In Irssi, there are three important connection-related commands: {{{/server}}}, 
 For example, typing {{{/connect irc.foo.com}}} will open a new network connection and connect to irc.foo.com. If you then type {{{/connect irc.bar.com}}}, there will be two network connections open, one for irc.foo.com, one for irc.bar.com. Typing {{{/server irc.baz.com}}} while the network connection for irc.bar.com is active will disconnect the client from irc.bar.com and connect to irc.baz.com on that network connection. Read this paragraph again so it sinks in, and then move on.
 
 You can use {{{Ctrl-X}}} to switch between network connections. You can see what the active network is by looking at the status bar, which looks something like this:\\
-{{{(05:23:10) (f0rked[+abilorsuwxyz]) (1:**NullIRC** (change with ^X))}}} (NullIRC is the active network connection)
+{{{(05:23:10) (ms[+abilorsuwxyz]) (1:NullIRC (change with ^X))}}} (NullIRC is the active network connection)
 
 At this point you should have a just-opened instance of Irssi, with no connections to any server. Connect to an IRC server by typing:
 
@@ -73,7 +73,7 @@ send an escape by default. The escape key may usually be used as a replacement
 for Alt for switching windows. If you'd like to use your Mac's Alt key to send an
 escape and properly switch windows in Irssi, do the following:
 
-===== Terminal.app (10.5 Leopard) =====
+===== Terminal.app (10.5 Leopard, 10.6 Snow Leopard) =====
 
   # Choose "Preferences" from the Terminal.app menu
   # In the "Settings" group, choose your profile.
@@ -203,17 +203,17 @@ screen
 You should be immediately returned to a shell prompt. You're now inside of your screen. You can see this by typing {{{screen -list}}}
 
 {{{
-f0rked@godfather f0rked $ screen -list
+ms@turing ~ $ screen -list
 There is a screen on:
-        7517.pts-0.godfather    (Attached)
-1 Socket in /var/run/screen/S-f0rked.
+        7517.pts-0.turing    (Attached)
+1 Socket in /var/run/screen/S-ms.
 }}}
 
 Now, type {{{irssi}}}. If you took the time earlier to define your networks with {{{/network}}}, you can type {{{irssi -c <network name>}}} here to automatically connect to the desired network. Irssi should open as it did before, but now it's running **inside of screen**.
 
 === Detaching ===
 
-There are certain keystrokes that you can make inside of a screen session to control it. The commands are in the format of **Ctrl-A,//letter//**, usually. This is executed by pressing the control key and the 'a' key at the same time, releasing both, and then pressing //letter//. At this point you should learn to detach from your screen session. Press **ctrl-a,d** to do this (Press ctrl-A, release, press d). When this is done, you should see something like "[detached]" print to your terminal. If you see this, you're no longer in screen, but Irssi is still running in it, in the background. For effect, feel free to disconnect from your shell completely and then log back in before continuing to the next step.
+There are certain keystrokes that you can make inside of a screen session to control it. The commands are in the format of **Ctrl-a,//letter//**, usually. This is executed by pressing the control key and the 'a' key at the same time, releasing both, and then pressing //letter//. At this point you should learn to detach from your screen session. Press **ctrl-a,d** to do this (Press ctrl-a, release, press d). When this is done, you should see something like "[detached]" print to your terminal. If you see this, you're no longer in screen, but Irssi is still running in it, in the background. For effect, feel free to disconnect from your shell completely and then log back in before continuing to the next step.
 
 === Reattaching ===
 
@@ -415,6 +415,41 @@ urxvt*urlLauncher:      /usr/bin/firefox
 
 (Thanks to anrxc for this tip.)
 
+=== UTF-8 in Irssi and Screen ===
+
+This topic is [[http://www.google.com/search?q=screen+irssi+utf-8|covered elsewhere]] but I mention it here for completeness. There are usually three steps involved with getting UTF-8 support in Irssi:
+
+  # Fix your [[http://www.linux.com/archive/feed/53781|locales]]
+  # Enable UTF-8 in screen
+  # Enable UTF-8 in irssi
+
+First, check your current locales. Run {{{locale}}} in a terminal. Mine look like this:
+
+{{{
+LANG="en_US.utf-8"
+LC_COLLATE="en_US.utf-8"
+LC_CTYPE="en_US.utf-8"
+LC_MESSAGES="en_US.utf-8"
+LC_MONETARY="en_US.utf-8"
+LC_NUMERIC="en_US.utf-8"
+LC_TIME="en_US.utf-8"
+LC_ALL=
+}}}
+
+If yours are all set to {{{POSIX}}} or are missing the ".utf-8" suffix, you need to generate and set your UTF-8 locales. In Debian and Ubuntu, simply run {{{sudo dpkg-reconfigure locales}}} and select the UTF-8 locales you desire. If everything goes smoothly, after logging in again, you should see "utf-8" suffixes in {{{locale}}}. For other distributions, refer to your distro-specific documentation.
+
+Now that the hard part is over, you must enable UTF-8 support in screen. This is done a variety of ways. The best way is to put
+
+{{{
+defutf8 on
+}}}
+
+in your {{{~/.screenrc}}} and start screen. If you're already running screen, you can avoid restarting it by using {{{Ctrl-a :utf8 on}}} to enable this option.
+
+Enabling UTF-8 support in Irssi is typically as simple as {{{/set term_charset utf-8}}} and {{{/save}}}. Try pasting some Japanese characters from [[http://yahoo.jp|yahoo.jp]] to test.
+
+If it works, congratulations. If you get garbage when you type foreign characters, something went wrong with the above three steps (obviously). Try to deduce the problem by running Irssi outside of screen or running other unicode-enabled programs inside screen. However, if you get square boxes, you're probably missing some terminal fonts for those characters and you should consult your package manager.
+
 == Resources ==
 
 Happy Irssi-ing and screening. You may use {{{man irssi}}} and {{{man screen}}}
@@ -428,4 +463,4 @@ sites:
    * [[http://lizzie.spod.cx/screenirssi.shtml|Guide to Using Screen and Irssi]] by [[http://lizzie.spod.cx/|Elizabeth Overal]] - Another screen+irssi tutorial with some more information. Thanks for the link, lizzie.
    * [[http://blinkenshell.org|Blinkenshell]] - Free UNIX shell provider.
 
-Article originally written: December 19, 2004.
+Article originally written: December 19, 2004. It has been updated periodically since then.
