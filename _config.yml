@@ -1,0 +1,2 @@
+exclude: ['.git', '.DS_Store']
+title: 'quadpoint.org'
