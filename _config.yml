@@ -1,2 +1,2 @@
-exclude: ['.git', '.DS_Store']
+exclude: ['.git', '.DS_Store', 'deploy.sh', '.gitignore']
 title: 'quadpoint.org'
