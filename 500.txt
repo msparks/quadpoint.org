@@ -1,4 +1,4 @@
-= Error 500 =
+= Error 500: Internal Server Error =
 
 You are seeing this page because something on our end went haywire.
 This is likely caused by a bug in the software, an unhandled error
