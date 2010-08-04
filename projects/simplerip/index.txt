@@ -3,7 +3,7 @@
 {{{
 raw:true
 noescape:true
-<script language="javascript" type="text/javascript" src="/static/content/projects/simplerip/simplerip.js"></script>
+<script language="javascript" type="text/javascript" src="/projects/simplerip/simplerip.js"></script>
 }}}
 
 With this document, you can generate the necessary commands to encode a movie directly from a DVD title to an [[wp>Xvid]] file using mencoder, without the need for other applications or helper scripts. Mencoder is part of the [[http://mplayerhq.hu|Mplayer]] tool set, available from [[http://mplayerhq.hu]]. The primary tool follows this paragraph; helper tools and information for filling in the following table can be found below.
@@ -135,7 +135,7 @@ Mplayer can automatically detect the crop settings. To determine the appropriate
 mplayer dvd://1 -vf cropdetect
 }}}
 
-where {{{dvd://1}}} is your source. Play for about 20 seconds and wait until the output is 
+where {{{dvd://1}}} is your source. Play for about 20 seconds and wait until the output is
 stable. You should see something like:
 
 {{{
