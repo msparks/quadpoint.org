@@ -47,6 +47,7 @@ body {
 /* Content */
 .content {
   padding: 20px;
+  background-color: #fff;
 }
 
 p.content {
