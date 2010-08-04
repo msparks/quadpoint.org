@@ -14,4 +14,7 @@ case $1 in
     ;;
 esac
 
-rsync -avz --progress --delete _site/* quadpoint.org:public/$site/
+rm -rf $site
+cp -a _site $site
+rsync -avz --delete --progress $site quadpoint.org:public/
+rm -rf $site
