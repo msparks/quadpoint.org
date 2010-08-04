@@ -9,17 +9,17 @@ body {
 /* Header */
 .header {
   background: #999999 url(../images/light.png) no-repeat 50% 0px;
-  height: 300px;
+  height: 225px;
 }
 
 .inf {
-  background: url(../images/inf.png) no-repeat 10px 10px;
-  height: 350px;
+  background: url(../images/inf.png) no-repeat 45px 10px;
+  height: 225px;
 }
 
 .qp {
-  background: url(../images/qp.org.png) no-repeat 20px 50px;
-  height: 250px;
+  background: url(../images/qp.org.png) no-repeat 13px 39px;
+  height: 150px;
 }
 
 .hs {
