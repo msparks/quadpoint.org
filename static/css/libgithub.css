@@ -30,7 +30,7 @@ div.libgithub-badge-diffline {
 
 div.libgithub-badge-commitmessage {
   font-style: italic;
-  font-family: Trebuchet MS, Arial, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
   padding-left: 95px;
   background-image: url(../images/libgithub/commit.png);
   background-repeat: no-repeat;

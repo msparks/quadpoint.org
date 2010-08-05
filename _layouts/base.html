@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>{% block title %}{{ document.title }} | {{ site.title }}{% endblock %}</title>
   <link rel="stylesheet" href="/static/css/blueprint/screen.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/static/css/blueprint/print.css" type="text/css" media="print">
+  <link rel="stylesheet" href="/static/css/blueprint/print.css" type="text/css" media="print" />
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection">
   <![endif]-->
@@ -66,8 +66,8 @@
       {% else %}
       <div class="span-22 main hs">
       {% endif %}
-        {% block content %}{% endblock %}
-      <div>
+      {% block content %}{% endblock %}
+      </div>
       <div class="span-22 footer">
         <p class="left">&copy; {% now "Y" %} Matt Sparks. <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Some rights reserved.</a></p>
         <p class="right">
