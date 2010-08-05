@@ -37,11 +37,12 @@ See my [[http://www.last.fm/user/f0rked|last.fm profile]] for more.
 
 === I Advocate... ===
 
-[[wp>open source]], freedom, knowledge, intelligence, [[wp>algorithm|optimal algorithms]], mathematics, theory, controversial topics,
+[[wp>open source]], freedom, knowledge, intelligence,
+[[wp>algorithm|optimal algorithms]], mathematics, theory, controversial topics,
 [[http://www.atheists.org/Atheism/|atheism]], [[wp>libertarianism]],
 [[wp>Internet Relay Chat|IRC]], logic, debates, logical debates, technology,
-security, encryption, [[wp>XMPP]],
-[[wp>teetotalism]], [[wp>LaTeX]], efficiency, organization, automation, [[wp>Web syndication|syndication]], elegance, ...
+security, encryption, [[wp>XMPP]], [[wp>LaTeX]], efficiency, organization,
+automation, [[wp>Web syndication|syndication]], elegance, ...
 
 ... in no particular order.
 
