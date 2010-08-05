@@ -79,6 +79,7 @@ p.content {
   height: 35px;
   transition: all 0.15s linear;
   -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
 }
 
 .tab a:hover {
@@ -109,6 +110,7 @@ p.content {
   text-shadow: rgba(102, 102, 102, 0.50) 0px 1px 0px;
   transition: all 0.15s linear;
   -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
 }
 
 .bc a:hover {
@@ -136,6 +138,7 @@ a {
   text-shadow: rgba(0, 102, 153, 0.30) 0px 1px 1px;
   transition: all 0.15s linear;
   -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
 }
 
 a:hover {
@@ -215,9 +218,9 @@ pre {
   border: 1px solid #ccc;
   font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
   /*background-color: #f0f0f0;*/
+  border-radius: 7px;
   -moz-border-radius: 7px;
   -khtml-border-radius: 7px;
-  border-radius: 7px;
 }
 
 .toc ol {
@@ -317,9 +320,9 @@ table.syntaxtable pre {
 
 table.syntaxtable tr td {
   background: none;
+  border-radius: 0;
   -moz-border-radius: 0;
   -khtml-border-radius: 0;
-  border-radius: 0;
 }
 
 div.syntax {
