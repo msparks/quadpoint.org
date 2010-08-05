@@ -1,8 +1,17 @@
 = alphasign =
 
-{{{alphasign}}} is a Python API for [[http://www.alpha-american.com|Alpha American]]
-LED signs, such as the [[http://www.betabrite.com|Betabrite]]. It implements the
+{{{
+raw:true
+noescape:true
+<p><a href="/projects/alphasign/betabrite.jpg" class="lightbox"><img src="/projects/alphasign/betabrite.thumb.jpg" class="right" width="200" alt="Betabrite running alphasign" /></a></p>
+}}}
+
+{{{alphasign}}} is a Python library for [[http://www.alpha-american.com|Alpha American]] LED signs, such as the [[http://www.betabrite.com|Betabrite]]. It
+implements the
 [[http://www.alpha-american.com/p-alpha-communications-protocol.html|Alpha Communications Protocol]].
+
+The picture on the right shows a Betabrite Prism displaying the time and
+temperature updated by a program using the alphasign library.
 
 == Installation ==
 
@@ -16,12 +25,11 @@ sudo easy_install -U alphasign
 
 == Documentation ==
 
-This project is documented with [[http://sphinx.pocoo.org/|Sphinx]]. The
-generated documentation is [[/projects/alphasign/docs|available online]].
+The documentation is [[/projects/alphasign/docs|available online]]. This project is documented with [[http://sphinx.pocoo.org/|Sphinx]].
 
 == Contributing ==
 
-As of June 2009, I will be away from my Betabrite (classic) for quite some time
+As of June 2009, I will be away from my Betabrite for quite some time
 and will be unable to add new features until I get another sign. If you find
 bugs or implement new features in {{{alphasign}}}, please contact me so I can
 integrate your changes.
