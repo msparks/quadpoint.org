@@ -11,14 +11,14 @@ introduction to avoid playing IM tag.
 Address: {{e.png|email}}
 
 [[wp>Pretty Good Privacy|PGP]]:
-[[http://static.quadpoint.org/pgp/Matt_Sparks_0xD2350400.asc|0xD2350400]]
-(fingerprint {{{0421 D660 2AF0 B353 8846  D4D6 B06C 9185 D235 0400}}})
+[[http://static.quadpoint.org/pgp/Matt_Sparks_0xD2350400.asc|0xD2350400]] \\ fingerprint: {{{0421 D660 2AF0 B353 8846  D4D6 B06C 9185 D235 0400}}}
 
 === IRC ===
 
-ms on [[http://nullirc.net|NullIRC]]; msparks on [[http://efnet.org|EFnet]], [[http://freenode.net|FreeNode]], [[http://ircnet.org|IRCnet]]
+**ms** on [[http://nullirc.net|NullIRC]] \\
+**msparks** on [[http://efnet.org|EFnet]], [[http://freenode.net|FreeNode]], [[http://ircnet.org|IRCnet]]
 
-See: [[wp>IRC]]
+See also: [[wp>IRC]]
 
 === Jabber (XMPP) ===
 
