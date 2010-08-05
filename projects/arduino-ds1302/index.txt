@@ -1,13 +1,19 @@
 = DS1302 RTC library for Arduino =
 
+{{{
+raw:true
+noescape:true
+<p><img src="/projects/arduino-ds1302/8-pin-dip.jpg" class="right" width="150" alt="8-pin IC" style="border:0" /></a></p>
+}}}
+
 This project is a library for the [[http://arduino.cc|Arduino]] platform. It
 provides a simple interface to the
 [[http://www.maxim-ic.com/quick_view2.cfm/qv_pk/2685/t/al|Maxim DS1302]]
-timekeepking chip. It allows Arduino projects to keep accurate time easily.
+timekeeping chip. It allows Arduino projects to keep accurate time easily.
 
 == Downloading ==
 
-The code is hosted by [[http://github.com|GitHub]] at [[http://github.com/msparks/arduino-ds1302]].
+The code is hosted by [[http://github.com|GitHub]] at [[http://github.com/msparks/arduino-ds1302|msparks/arduino-ds1302]].
 
 It can be cloned with:
 
