@@ -1,0 +1,38 @@
+= git-score =
+
+{{/projects/git-score/git-score.png|_git-score screenshot}}
+
+**git-score** is a script that computes 'scores' for authors who have
+contributed to a git repository. It displays aggregate stats in a concise format
+for human consumption and provides a rough estimation of developer involvement
+in a project.
+
+The screenshot at the right shows example output of git-score.
+
+== Installation ==
+
+git-score is available on [[http://github.com|GitHub]] at [[http://github.com/msparks/git-score|msparks/git-score]]:
+
+{{{
+git clone git://github.com/msparks/git-score.git
+}}}
+
+Copy {{{git-score}}} to somewhere in your path. See the
+[[http://github.com/msparks/git-score/blob/master/README|README]] for details.
+
+== Usage ==
+
+Simply type {{{git-score}}} in a git respository. In newer versions of git, {{{git score}}} works as well.
+
+For a full list of options, use
+
+{{{
+git-score --help
+}}}
+
+Also read the README for example usage.
+
+== Contributing ==
+
+Have an idea? [[http://github.com/msparks/git-score|Fork the project]] on GitHub
+and send me a pull request.

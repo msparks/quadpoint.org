@@ -53,6 +53,12 @@ Configuration files.
 
 View project: [[projects/dotfiles]]
 
+== git-score ==
+
+Compute scores for contributors to a git repository.
+
+View project: [[projects/git-score]]
+
 == Infinite Machine ==
 
 The engine that powers this website.
