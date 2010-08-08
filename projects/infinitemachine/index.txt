@@ -1,9 +1,20 @@
 = Infinite Machine =
 
-Infinite Machine, or infmx, is the custom web engine that powers
+Infinite Machine, or infmx, is the custom software that generates
 [[http://quadpoint.org|quadpoint.org]]. I started this project because I
-couldn't find a similar project that would do what I wanted how I wanted. It is
-written in Python and uses the [[http://www.django.com|Django web framework]].
+couldn't find a similar project that would do what I wanted how I wanted.
+Infinite Machine generates static content (.html files) from templates and
+specially-formatted documents written in a wiki-like syntax.
+
+Infinite Machine was originally a Django application that generated pages on the
+fly. It had a number of caching mechanisms in place to keep up performance, and
+a feature called Infinite Caching was implemented to update the cache
+asynchronously, allowing for virtually infinite cache times.
+
+Then I realized this was silly and unnecessary.
+
+In summer 2010, Infinite Machine was reimplemented to use the same interface as
+[[http://jekyllrb.com|Jekyll]].
 
 == Features ==
 
@@ -22,21 +33,6 @@ specification, and Infinite Machine uses the parser from
 
 See the [[projects/infinitemachine/syntax|syntax]] page for examples.
 
-=== Git storage backend ===
-
-Document content and resources for documents, such as document-specific images,
-are read directly from a [[http://git.or.cz|git]] repository. This has wonderful
-side effects and avoids reinventing the wheel for content management. Publishing
-can be as easy as pushing to a repository.
-
-=== Aggressive caching ===
-
-Efficiency is an important element in Infinite Machine's design. Fetching, parsing and
-rendering pages is costly, often taking several hundred milliseconds for a
-single page request. Therefore, caching is essential.
-[[http://www.danga.com/memcached/|Memcached]] is used to reduce the request time
-to a few milliseconds.
-
 === Syntax highlighting ===
 
 When source code is included in a document, it is easy to add syntax
@@ -47,7 +43,7 @@ highlight code snippets like this:
 lang:c
 #include <stdio.h>
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
   printf("syntax highlighting is awesome\n");
   return 0;
@@ -65,7 +61,8 @@ displayed after the summary, as shown at the top of this page.
 == Downloading ==
 
 Infinite Machine is an open source project. It is hosted on
-[[http://github.com|GitHub]] at [[http://github.com/msparks/infinitemachine]].
+[[http://github.com|GitHub]] at
+[[http://github.com/msparks/infinitemachine|msparks/infinitemachine]].
 
 It can be cloned with:
 
@@ -73,6 +70,5 @@ It can be cloned with:
 git clone git://github.com/msparks/infinitemachine.git
 }}}
 
-No fancy documentation is available yet. Infinite Machine is still new and may not
-be ready for general use, but feel free to submit bugs and patches.
-
+No fancy documentation is available yet. Infinite Machine is still new and may
+not be ready for general use, but feel free to submit bugs and patches.
