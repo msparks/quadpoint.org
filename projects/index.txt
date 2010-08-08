@@ -57,6 +57,19 @@ View project: [[projects/dotfiles]]
 
 Compute scores for contributors to a git repository.
 
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks','git-score')).
+    targetIs('#git-score-commit');
+});
+</script>
+<div id="git-score-commit"></div>
+}}}
+
 View project: [[projects/git-score]]
 
 == Infinite Machine ==
