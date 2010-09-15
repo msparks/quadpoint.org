@@ -154,7 +154,7 @@ being repeated over and over again. In this case, the "{{{704:464:10:8}}}" is th
 
 For determining the scale, decide if the movie widescreen (16:9 ratio) or fullscreen (4:3).
 
-* Widescreen: use scale "{{{704:304}}}" (see below)
+* Widescreen: use scale "{{{704:294}}}" (2.35:1) or "{{{768:432}}}" (16:9) (see below)
 * Fullscreen: use scale "{{{640:480}}}" (see below)
 
 Excerpt on scaling from the mencoder manpage:
