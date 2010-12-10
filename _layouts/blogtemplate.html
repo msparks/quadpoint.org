@@ -293,6 +293,7 @@
 
       <ul class="post-footer">
         {block:NoteCount}<li><a href="{Permalink}#note-container">{NoteCountWithLabel}</a></li>{/block:NoteCount}
+        <li><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></li>
         <li><a href="{Permalink}">Permalink</a></li>
         <li>Posted at {24Hour}:{Minutes}</li>
         {block:HasTags}
@@ -301,6 +302,28 @@
       </ul> <!-- end .post-footer -->
     </div> <!-- end .post -->
     {/block:Posts}
+
+    <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /**
+        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+        */
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = 'http://quadpoint.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=quadpoint">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    {/block:Permalink}<script type="text/javascript">
+    var disqus_shortname = 'quadpoint';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'http://disqus.com/forums/quadpoint/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
 
     {block:PostNotes}
     <div id="note-container">
