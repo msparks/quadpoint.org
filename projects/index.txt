@@ -1,59 +1,33 @@
 = Projects =
 
-This is a collection of public projects I've started or worked on.
+This is a collection of public projects I've started or worked on. Most are
+software, but I have done a few electronics projects as well.
 
-== alphasign ==
+== Active Projects ==
 
-An implementation of the Alpha Sign Communications Protocol in Python. It is
-used to control Alpha American LED signs.
+I consider a project to be 'active' if I make semi-frequent updates to it and
+use it frequently.
 
-{{{
-noescape: true
-raw: true
-
-<script type="text/javascript">
-$(window).load(function () {
-  (new libgithub.Badge('msparks','alphasign')).
-    targetIs('#alphasign-commit');
-});
-</script>
-<div id="alphasign-commit"></div>
-}}}
-
-View project: [[projects/alphasign]]
-
-== arduino-ds1302 ==
-
-DS1302 Real Time Clock (RTC) library for Arduino.
-
-{{{
-noescape: true
-raw: true
-
-<script type="text/javascript">
-$(window).load(function () {
-  (new libgithub.Badge('msparks','arduino-ds1302')).
-    targetIs('#arduino-ds1302-commit');
-});
-</script>
-<div id="arduino-ds1302-commit"></div>
-}}}
-
-View project: [[projects/arduino-ds1302|arduino-ds1302]]
-
-== cscredits ==
-
-A utility to manage bills for a resource shared equally among many people.
-
-View project: [[projects/cscredits]]
-
-== dotfiles ==
+=== dotfiles ===
 
 Configuration files.
 
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  (new libgithub.Badge('msparks', 'dotfiles')).
+    targetIs('#dotfiles-commit');
+});
+</script>
+<div id="dotfiles-commit"></div>
+}}}
+
 View project: [[projects/dotfiles]]
 
-== git-score ==
+=== git-score ===
 
 Compute scores for contributors to a git repository.
 
@@ -72,7 +46,7 @@ $(window).load(function () {
 
 View project: [[projects/git-score]]
 
-== Infinite Machine ==
+=== Infinite Machine ===
 
 The program that generates this website.
 
@@ -82,7 +56,7 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks','infinitemachine')).
+  (new libgithub.Badge('msparks', 'infinitemachine')).
     targetIs('#infinitemachine-commit');
 });
 </script>
@@ -91,7 +65,7 @@ $(window).load(function () {
 
 View project: [[projects/infinitemachine]]
 
-== Irssi scripts ==
+=== Irssi scripts ===
 
 A collection of scripts I have written for [[http://irssi.org|Irssi]].
 
@@ -110,7 +84,7 @@ $(window).load(function () {
 
 View project: [[projects/irssiscripts]]
 
-== libgithub ==
+=== libgithub ===
 
 A JavaScript library to display GitHub data on websites.
 
@@ -129,25 +103,13 @@ $(window).load(function () {
 
 View project: [[projects/libgithub|libgithub]]
 
-== Pastee ==
+=== Pastee ===
 
 My [[wp>pastebin]].
 
 View project: [[projects/pastee]]
 
-== rfcgraph ==
-
-A tool to visualize the relationships between RFCs.
-
-View project: [[projects/rfcgraph]]
-
-== SimpleRip ==
-
-An easy way to rip DVDs on Linux.
-
-View project: [[projects/simplerip]]
-
-== svcshare ==
+=== svcshare ===
 
 A distributed queueing system.
 
@@ -157,7 +119,7 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks','svcshare')).
+  (new libgithub.Badge('msparks', 'svcshare')).
     targetIs('#svcshare-commit');
 });
 </script>
@@ -165,3 +127,50 @@ $(window).load(function () {
 }}}
 
 View project: [[projects/svcshare]]
+
+== Completed and Inactive Projects ==
+
+The projects I no longer frequently work on are listed here. However, unless
+otherwise specified, I do accept patches to these. It is also possible that
+some of these may just be on hiatus.
+
+=== 2009 ===
+
+==== alphasign ====
+
+An implementation of the Alpha Sign Communications Protocol in Python. It is
+used to control Alpha American LED signs.
+
+View project: [[projects/alphasign]]
+
+==== arduino-ds1302 ====
+
+DS1302 Real Time Clock (RTC) library for Arduino.
+
+View project: [[projects/arduino-ds1302|arduino-ds1302]]
+
+=== 2008 ===
+
+==== cscredits ====
+
+A utility to manage bills for a resource shared equally among many people.
+
+View project: [[projects/cscredits]]
+
+==== rfcgraph ====
+
+A tool to visualize the relationships between RFCs.
+
+View project: [[projects/rfcgraph]]
+
+=== 2007 ===
+
+=== 2006 ===
+
+=== 2005 ===
+
+==== SimpleRip ===
+
+An easy way to rip DVDs on Linux.
+
+View project: [[projects/simplerip]]
