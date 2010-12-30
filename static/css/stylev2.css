@@ -275,6 +275,7 @@ img {
 img.left {
   float: left;
   margin: 1em;
+  margin-top: 0;
   border: 2px solid #ccc;
   background-color: #f0f0f0;
 }
@@ -282,6 +283,7 @@ img.left {
 img.right {
   float: right;
   margin: 1em;
+  margin-top: 0;
   border: 2px solid #ccc;
   background-color: #f0f0f0;
 }
@@ -290,6 +292,7 @@ img.center {
   display: block;
   margin: 0 auto;
   margin: 1em;
+  margin-top: 0;
   border: 2px solid #ccc;
   background-color: #f0f0f0;
 }

@@ -10,6 +10,14 @@ use it frequently.
 
 === dotfiles ===
 
+{{{
+raw:true
+noescape:true
+<a href="/projects/dotfiles" title="dotfiles"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
 Configuration files.
 
 {{{
@@ -28,6 +36,14 @@ $(window).load(function () {
 View project: [[projects/dotfiles]]
 
 === git-score ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/git-score" title="git-score"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
 
 Compute scores for contributors to a git repository.
 
@@ -48,6 +64,14 @@ View project: [[projects/git-score]]
 
 === Infinite Machine ===
 
+{{{
+raw:true
+noescape:true
+<a href="/projects/infmx" title="infmx"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
 The program that generates this website.
 
 {{{
@@ -66,6 +90,14 @@ $(window).load(function () {
 View project: [[projects/infinitemachine]]
 
 === Irssi scripts ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/irssiscripts" title="irssiscripts"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
 
 A collection of scripts I have written for [[http://irssi.org|Irssi]].
 
@@ -86,6 +118,14 @@ View project: [[projects/irssiscripts]]
 
 === libgithub ===
 
+{{{
+raw:true
+noescape:true
+<a href="/projects/libgithub" title="libgithub"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
 A JavaScript library to display GitHub data on websites.
 
 {{{
@@ -105,11 +145,27 @@ View project: [[projects/libgithub|libgithub]]
 
 === Pastee ===
 
+{{{
+raw:true
+noescape:true
+<a href="/projects/pastee" title="pastee"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
 My [[wp>pastebin]].
 
 View project: [[projects/pastee]]
 
 === svcshare ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/svcshare" title="svcshare"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
 
 A distributed queueing system.
 
@@ -134,42 +190,100 @@ The projects I no longer frequently work on are listed here. However, unless
 otherwise specified, I do accept patches to these. It is also possible that
 some of these may just be on hiatus.
 
-=== 2009 ===
+=== alphasign ===
 
-==== alphasign ====
+{{{
+raw:true
+noescape:true
+<a href="/projects/alphasign" title="alphasign"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
+**Project year: 2009**
 
 An implementation of the Alpha Sign Communications Protocol in Python. It is
 used to control Alpha American LED signs.
 
 View project: [[projects/alphasign]]
 
-==== arduino-ds1302 ====
+=== arduino-ds1302 ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/arduino-ds1302" title="arduino-ds1302"><img
+src="/static/images/questionmark.png" width="75" height="75" alt=""
+class="left" /></a>
+}}}
+
+**Project year: 2009**
 
 DS1302 Real Time Clock (RTC) library for Arduino.
 
 View project: [[projects/arduino-ds1302|arduino-ds1302]]
 
-=== 2008 ===
+=== cscredits ===
 
-==== cscredits ====
+{{{
+raw:true
+noescape:true
+<a href="/projects/cscredits" title="cscredits"><img
+src="/projects/cscredits/cscredits.png" width="75" height="75" alt="cscredits"
+class="left" /></a>
+}}}
+
+**Project year: 2008**
 
 A utility to manage bills for a resource shared equally among many people.
 
 View project: [[projects/cscredits]]
 
-==== rfcgraph ====
+=== rfcgraph ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/rfcgraph" title="rfcgraph"><img
+src="/projects/rfcgraph/rfcgraph.png" width="75" height="75" alt="rfcgraph"
+class="left" /></a>
+}}}
+
+**Project year: 2008**
 
 A tool to visualize the relationships between RFCs.
 
 View project: [[projects/rfcgraph]]
 
-=== 2007 ===
+=== CUMTD Phone Interface ===
 
-=== 2006 ===
+{{{
+raw:true
+noescape:true
+<a href="/projects/cumtd" title="CUMTD Phone Interface"><img
+src="http://farm6.static.flickr.com/5129/5299728290_a11173930f_s.jpg"
+width="75" height="75" alt="WML phone interface listing upcoming buses"
+class="left" /></a>
+}}}
 
-=== 2005 ===
+**Project year: 2006**
 
-==== SimpleRip ===
+Displays upcoming bus information for various stops in the Champaign-Urbana
+area.
+
+View project: [[projects/cumtd]]
+
+=== SimpleRip ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/simperip" title="SimpleRip"><img
+src="/projects/simplerip/simplerip.png" width="75" height="75" alt="SimpleRip"
+class="left" /></a>
+}}}
+
+**Project year: 2005**
 
 An easy way to rip DVDs on Linux.
 
