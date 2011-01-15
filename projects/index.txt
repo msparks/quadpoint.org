@@ -20,7 +20,7 @@ alt="arduino-ds1620" class="left" /></a>
 
 DS1620 digital thermometer library for Arduino.
 
-View project: [[projects/arduino-ds1620|arduino-ds1620]]
+View project: [[projects/arduino-ds1620]]
 
 === dotfiles ===
 
@@ -155,7 +155,7 @@ $(window).load(function () {
 <div id="libgithub-commit"></div>
 }}}
 
-View project: [[projects/libgithub|libgithub]]
+View project: [[projects/libgithub]]
 
 === Pastee ===
 
@@ -235,7 +235,7 @@ class="left" /></a>
 
 DS1302 Real Time Clock (RTC) library for Arduino.
 
-View project: [[projects/arduino-ds1302|arduino-ds1302]]
+View project: [[projects/arduino-ds1302]]
 
 === cscredits ===
 
