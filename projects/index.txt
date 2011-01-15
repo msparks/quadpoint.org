@@ -95,8 +95,8 @@ View project: [[projects/infinitemachine]]
 raw:true
 noescape:true
 <a href="/projects/irssiscripts" title="irssiscripts"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+src="/projects/irssiscripts/irssiscripts.png" width="75" height="75"
+alt="irssiscripts" class="left" /></a>
 }}}
 
 A collection of scripts I have written for [[http://irssi.org|Irssi]].
