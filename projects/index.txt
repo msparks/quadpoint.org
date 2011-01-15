@@ -67,7 +67,7 @@ View project: [[projects/git-score]]
 {{{
 raw:true
 noescape:true
-<a href="/projects/infmx" title="infmx"><img
+<a href="/projects/infinitemachine" title="infinitemachine"><img
 src="/static/images/questionmark.png" width="75" height="75" alt=""
 class="left" /></a>
 }}}
