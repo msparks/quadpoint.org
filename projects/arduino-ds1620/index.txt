@@ -1,0 +1,50 @@
+= DS1620 digital thermometer library for Arduino =
+
+{{{
+raw:true
+noescape:true
+<a href="http://www.flickr.com/photos/_msparks/5353523907/" title="Working on a
+DS1620 temperature sensor library for the Arduino by Matt Sparks, on
+Flickr" target="_blank"><img
+src="http://farm6.static.flickr.com/5284/5353523907_d1cd16c2ea_m.jpg"
+width="240" height="240" alt="Working on a DS1620 temperature sensor library
+for the Arduino" class="right" /></a>
+}}}
+
+This project is a library for the [[http://arduino.cc|Arduino]] platform. It
+provides a simple interface to the
+[[http://www.maxim-ic.com/datasheet/index.mvp/id/2735|Maxim DS1620]] digital
+thermometer.
+
+== Downloading ==
+
+The code is hosted by [[http://github.com|GitHub]] at [[http://github.com/msparks/arduino-ds1620|msparks/arduino-ds1620]].
+
+It can be cloned with:
+
+{{{
+git clone git://github.com/msparks/arduino-ds1620.git DS1620
+}}}
+
+The code is also available in
+[[http://github.com/msparks/arduino-ds1620/tarball/master|tarball]]
+and
+[[http://github.com/msparks/arduino-ds1620/zipball/master|zipball]]
+forms.
+
+== Installing ==
+
+Placing the {{{DS1620}}} directory in a new {{{libraries}}} directory within
+the directory containing sketches seems to work for me. Newer Arduino IDE
+versions pick up libraries from here. Specifically, the {{{DS1620}}} directory
+is located at:
+
+{{{
+~/Documents/Arduino/libraries/DS1620
+}}}
+
+on my Mac.
+
+A simple
+[[https://github.com/msparks/arduino-ds1620/blob/master/examples/ds1620/ds1620.pde|example]]
+that prints out temperatures is included with the code.

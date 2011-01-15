@@ -8,6 +8,20 @@ software, but I have done a few electronics projects as well.
 I consider a project to be 'active' if I make semi-frequent updates to it and
 use it frequently.
 
+=== arduino-ds1620 ===
+
+{{{
+raw:true
+noescape:true
+<a href="/projects/arduino-ds1620" title="arduino-ds1620"><img
+src="/projects/arduino-ds1620/arduino-ds1620.png" width="75" height="75"
+alt="arduino-ds1620" class="left" /></a>
+}}}
+
+DS1620 digital thermometer library for Arduino.
+
+View project: [[projects/arduino-ds1620|arduino-ds1620]]
+
 === dotfiles ===
 
 {{{
