@@ -7,8 +7,8 @@ Pastee came to fruition during the Yahoo! [[http://www.hackday.org|Hack Day]] at
 [[http://www.uiuc.edu|UIUC]] in September 2008. It won the //Best Overall// award.
 
 As of April 2009, it's still not open source. I haven't touched the code much
-since Hack Day. However, in the coming months, it will be made open and hosted
-on [[http://github.com|GitHub]] at
+since Hack Day. Eventually it will be made open and hosted on
+[[http://github.com|GitHub]] at
 [[http://github.com/msparks/pastee|msparks/pastee]].
 
 Until then, you can use the unfinished, slightly buggy live version at
