@@ -82,8 +82,8 @@ View project: [[projects/git-score]]
 raw:true
 noescape:true
 <a href="/projects/infinitemachine" title="infinitemachine"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+src="/projects/infinitemachine/infinitemachine.png" width="75" height="75"
+alt="infinitemachine" class="left" /></a>
 }}}
 
 The program that generates this website.
