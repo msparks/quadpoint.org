@@ -1,6 +1,6 @@
 = git-score =
 
-{{/projects/git-score/git-score.png|_git-score screenshot}}
+{{/projects/git-score/git-score-sshot.png|_git-score screenshot}}
 
 **git-score** is a script that computes 'scores' for authors who have
 contributed to a git repository. It displays aggregate stats in a concise format

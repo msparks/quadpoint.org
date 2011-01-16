@@ -55,7 +55,7 @@ View project: [[projects/dotfiles]]
 raw:true
 noescape:true
 <a href="/projects/git-score" title="git-score"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
+src="/projects/git-score/git-score.png" width="75" height="75" alt="git-score"
 class="left" /></a>
 }}}
 
