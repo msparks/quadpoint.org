@@ -19,7 +19,7 @@ degree in Computer Science.
   * IM: [[http://bitlbee.org|BitlBee]]
   * Mail reader: [[http://gmail.com|Gmail]], [[http://mutt.org|mutt]]
   * Feeds: [[http://google.com/reader|Google Reader]]
-  * Editor: [[http://vim.org|Vim]] + [[http://www.gnu.org/software/emacs/|Emacs]] (mixed keybindings -- see [[projects/dotfiles|dotfiles]])
+  * Editor: [[http://www.gnu.org/software/emacs/|Emacs]]
   * Window manager (GNU/Linux): [[http://xmonad.org|xmonad]], [[http://xfce.org|Xfce]], [[http://fluxbox.org|fluxbox]]
   * Language (interpreted): [[http://python.org|Python]], [[http://perl.com|Perl]]
   * Language (compiled): [[http://en.wikipedia.org/wiki/C_(programming_language)|C/C++]]
