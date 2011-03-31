@@ -20,7 +20,21 @@ alt="arduino-ds1620" class="left" /></a>
 
 DS1620 digital thermometer library for Arduino.
 
-View project: [[projects/arduino-ds1620]]
+{{{
+noescape: true
+raw: true
+
+<script type="text/javascript">
+$(window).load(function () {
+  var al = new libgithub.ActivityLine('msparks', 'arduino-ds1620');
+  al.gravatarSizeIs(0);
+  al.targetIs('#arduino-ds1620-commit');
+});
+</script>
+<strong>Activity:</strong> <span id="arduino-ds1620-commit"></span>
+}}}
+
+**View project:** [[projects/arduino-ds1620]]
 
 === dotfiles ===
 
@@ -40,14 +54,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks', 'dotfiles')).
-    targetIs('#dotfiles-commit');
+  var al = new libgithub.ActivityLine('msparks', 'dotfiles');
+  al.gravatarSizeIs(0);
+  al.targetIs('#dotfiles-commit');
 });
 </script>
-<div id="dotfiles-commit"></div>
+<strong>Activity:</strong> <span id="dotfiles-commit"></span>
 }}}
 
-View project: [[projects/dotfiles]]
+**View project:** [[projects/dotfiles]]
 
 === git-score ===
 
@@ -67,14 +82,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks','git-score')).
-    targetIs('#git-score-commit');
+  var al = new libgithub.ActivityLine('msparks', 'git-score');
+  al.gravatarSizeIs(0);
+  al.targetIs('#git-score-commit');
 });
 </script>
-<div id="git-score-commit"></div>
+<strong>Activity:</strong> <span id="git-score-commit"></span>
 }}}
 
-View project: [[projects/git-score]]
+**View project:** [[projects/git-score]]
 
 === Infinite Machine ===
 
@@ -94,14 +110,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks', 'infinitemachine')).
-    targetIs('#infinitemachine-commit');
+  var al = new libgithub.ActivityLine('msparks', 'infinitemachine');
+  al.gravatarSizeIs(0);
+  al.targetIs('#infinitemachine-commit');
 });
 </script>
-<div id="infinitemachine-commit"></div>
+<strong>Activity:</strong> <span id="infinitemachine-commit"></span>
 }}}
 
-View project: [[projects/infinitemachine]]
+**View project:** [[projects/infinitemachine]]
 
 === Irssi scripts ===
 
@@ -121,14 +138,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks','irssiscripts')).
-    targetIs('#irssiscripts-commit');
+  var al = new libgithub.ActivityLine('msparks', 'irssiscripts');
+  al.gravatarSizeIs(0);
+  al.targetIs('#irssiscripts-commit');
 });
 </script>
-<div id="irssiscripts-commit"></div>
+<strong>Activity:</strong> <span id="irssiscripts-commit"></span>
 }}}
 
-View project: [[projects/irssiscripts]]
+**View project:** [[projects/irssiscripts]]
 
 === libgithub ===
 
@@ -140,7 +158,8 @@ src="/static/images/questionmark.png" width="75" height="75" alt=""
 class="left" /></a>
 }}}
 
-A JavaScript library to display GitHub data on websites.
+A JavaScript library to display GitHub data on websites. It populates the
+'Activity' lines on this page.
 
 {{{
 noescape: true
@@ -148,14 +167,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks','libgithub')).
-    targetIs('#libgithub-commit');
+  var al = new libgithub.ActivityLine('msparks', 'libgithub');
+  al.gravatarSizeIs(0);
+  al.targetIs('#libgithub-commit');
 });
 </script>
-<div id="libgithub-commit"></div>
+<strong>Activity:</strong> <span id="libgithub-commit"></span>
 }}}
 
-View project: [[projects/libgithub]]
+**View project:** [[projects/libgithub]]
 
 === Pastee ===
 
@@ -169,7 +189,7 @@ class="left" /></a>
 
 My [[wp>pastebin]].
 
-View project: [[projects/pastee]]
+**View project:** [[projects/pastee]]
 
 === svcshare ===
 
@@ -189,14 +209,15 @@ raw: true
 
 <script type="text/javascript">
 $(window).load(function () {
-  (new libgithub.Badge('msparks', 'svcshare')).
-    targetIs('#svcshare-commit');
+  var al = new libgithub.ActivityLine('msparks', 'svcshare');
+  al.gravatarSizeIs(0);
+  al.targetIs('#svcshare-commit');
 });
 </script>
-<div id="svcshare-commit"></div>
+<strong>Activity:</strong> <span id="svcshare-commit"></span>
 }}}
 
-View project: [[projects/svcshare]]
+**View project:** [[projects/svcshare]]
 
 == Completed and Inactive Projects ==
 
@@ -219,7 +240,7 @@ class="left" /></a>
 An implementation of the Alpha Sign Communications Protocol in Python. It is
 used to control Alpha American LED signs.
 
-View project: [[projects/alphasign]]
+**View project:** [[projects/alphasign]]
 
 === arduino-ds1302 ===
 
@@ -235,7 +256,7 @@ class="left" /></a>
 
 DS1302 Real Time Clock (RTC) library for Arduino.
 
-View project: [[projects/arduino-ds1302]]
+**View project:** [[projects/arduino-ds1302]]
 
 === cscredits ===
 
@@ -251,7 +272,7 @@ class="left" /></a>
 
 A utility to manage bills for a resource shared equally among many people.
 
-View project: [[projects/cscredits]]
+**View project:** [[projects/cscredits]]
 
 === rfcgraph ===
 
@@ -267,7 +288,7 @@ class="left" /></a>
 
 A tool to visualize the relationships between RFCs.
 
-View project: [[projects/rfcgraph]]
+**View project:** [[projects/rfcgraph]]
 
 === CUMTD Phone Interface ===
 
@@ -285,7 +306,7 @@ class="left" /></a>
 Displays upcoming bus information for various stops in the Champaign-Urbana
 area.
 
-View project: [[projects/cumtd]]
+**View project:** [[projects/cumtd]]
 
 === SimpleRip ===
 
@@ -301,4 +322,4 @@ class="left" /></a>
 
 An easy way to rip DVDs on Linux.
 
-View project: [[projects/simplerip]]
+**View project:** [[projects/simplerip]]
