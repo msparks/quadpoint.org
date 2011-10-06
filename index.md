@@ -6,7 +6,7 @@ title: quadpoint.org
 # Matt Sparks
 
 <div class="subtitle meta">
-  Semi-jaded Computer Enthusiast &amp; Software Engineer
+  Semi-jaded Computer Scientist &amp; Software Engineer
 </div>
 
 <div class="profile">
