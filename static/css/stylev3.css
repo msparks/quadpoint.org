@@ -1,0 +1,587 @@
+/* Layout. */
+html {
+  background-color: #fff;
+  background-color: #a4acb4;
+}
+
+body {
+  background-color: #a4acb4;
+  color: #666;
+  font-family: "Minion Pro", "Adobe Garamond Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
+  font-size: 16px;
+}
+
+/* Header/breadcrumbs above page. */
+.header {
+  margin: 0 auto;
+  width: 720px;
+  padding: 0;
+  color: #d9e4ef;
+  height: 1.5em;
+}
+
+.header .path {
+  width: 60%;
+  float: left;
+}
+
+.header .nav {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+
+/* The visible paper-like page. */
+.page {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 606px;
+  border: 1px solid #758392;
+  border-radius: 3px;
+  padding: 65px;
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+/* Meta text. */
+.meta {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+}
+
+/* Short description for the title. */
+.subtitle {
+  font-size: 13px;
+  line-height: 25px;
+  color: #999;
+}
+
+/* Content text. */
+p {
+  color: #333;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 22px 0;
+  text-align: justify;
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;     /* force scrollbar */
+  background-color: #e0ddda;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Minion Pro", "Adobe Garamond Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
+  color: #333;
+}
+
+/* font size and rhythm */
+html {
+  font-size: 1.0em;
+}
+
+p, dt, dd {
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
+p {
+  text-align: justify;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+pre, blockquote {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  padding: .857em 1em;
+  margin-bottom: 1.714em;
+}
+
+math[display=block] {
+  font-size: 1.0em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.333em;
+  margin-top: 0.22em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.0em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-top: 1.333em;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.0em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.subtitle, .meta {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+
+#footer {
+  margin-top: 1.5em;
+}
+
+h1 + div.subtitle {
+  margin-top: -1.6em;
+}
+
+div.subtitle {
+  margin-bottom: 1.6em;
+}
+
+h1 + h2 {
+  margin-top: -1.6em;
+}
+
+hr {
+  height: 1.6em;
+  margin-top: 1.6em;
+}
+
+hr + h2 {
+  margin-top: 0.5em;
+}
+
+a.noteref {
+  font-size: 0.75em;
+  line-height: 1.0em;
+}
+
+small, #notes > li > p {
+  font-size: 0.813em;
+  line-height: 1.846em;
+}
+
+li {
+  line-height: 1.6em;
+}
+
+input {
+  font-size: 1.0em;
+}
+
+/* links */
+a {
+  color: #004491;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* lists */
+ul, ol {
+  padding-left: 1.8em;
+}
+
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  color: #111;
+  clear: left;
+}
+
+h1 a:link,
+h2 a:link {
+  color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover {
+  color: #555;
+}
+
+h3 {
+  font-style: italic;
+}
+
+abbr {
+  letter-spacing: 0.1em;
+}
+
+/* bordered environments */
+blockquote,
+code,
+kbd {
+  background: #e9e8e7;
+  border: 1px solid #e0ddda;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+}
+
+abbr[title], acronym[title] {
+  border-bottom: 1px dotted #d3dfee;
+}
+
+/* monospace environments */
+code,
+pre,
+kbd {
+  font-family: Inconsolata, Terminus, Consolas, "Liberation Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", Monaco, "Lucida Console", "Lucida Sans Typewriter", "Nimbus Mono L", "Courier New", Courier, monospace;
+}
+
+code { }
+
+pre {
+  background-color: #202224;
+  color: #f8f8f8;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+}
+
+pre > code {
+  color: #f8f8f8;
+  display: block;
+  border: none;
+  background-color: inherit;
+}
+
+code,
+kbd {
+  padding: 0 0.3ex;
+}
+
+blockquote {
+  border-left: thick solid #e0ddda;
+  padding: 0 1em;
+}
+
+hr {
+  border: none;
+  border-top: thin solid #c9c8c7;
+}
+
+table {
+  border-top: double #999897;
+  border-bottom: thin solid #999897;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+th {
+  border-bottom: thin solid #999897;
+}
+
+td {
+  padding: 0 0.5em;
+}
+
+table.plain {
+  border-top: none;
+  border-bottom: none;
+}
+
+table.plain th {
+  border-bottom: none;
+}
+
+dd {
+  margin-left: 1.5em;
+}
+
+merror {
+  display: inline;
+}
+
+math[display=block] {
+  overflow: auto;
+}
+
+math {
+  white-space: nowrap;
+}
+
+.eq-number {
+  float: right;
+}
+
+/* footnotes */
+a.noteref {
+  vertical-align: super;
+}
+
+sup {
+  line-height: 0px;
+}
+
+a.noteref, sup a:link, sup a:visited {
+  padding: 3px;
+}
+
+#notes > li > p {
+  display: inline;
+}
+
+/* images */
+p img {
+  float: right;
+  padding-left: 1em;
+}
+
+div.image {
+  width: 100%;
+  padding: 1.5em 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.image img {
+  display: block;
+  margin: 0 auto;
+  border: thin solid #d9d8d7;
+  padding: 3px;
+}
+
+div.noborder img {
+  border: 0;
+  padding: 0;
+}
+
+div.image p {
+  text-align: center;
+  margin: 1em 0 0 0;
+  font-size: 0.938em;
+  line-height: 1.6em;
+  font-style: italic;
+}
+
+div.image p strong {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.meta a {
+  color: #999;
+  text-decoration: none;
+  border: 0;
+}
+
+.meta a:hover {
+  color: #333;
+}
+
+h1 + div.subtitle {
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* error pages */
+.error .icon {
+  float: left;
+  font-size: 4em;
+  line-height: 1em;
+  margin-right: 0.2em;
+  color: #900;
+}
+
+/* code (from Twilight Color Theme for Emacs) */
+code .difflines,        /* diff */
+code .bold {          /* generic */
+  font-weight: bold;
+}
+
+code .italics {         /* generic */
+  font-style: italic;
+}
+
+code .underline {         /* LaTeX */
+  text-decoration: underline;
+}
+
+code .fixed {           /* LaTeX */
+  font-family: monospace;
+}
+
+code .bibtex,           /* LaTeX */
+code .keyword {         /* generic */
+  font-weight: bold;
+  color: #e5bc75;
+}
+
+code .math,           /* LaTeX */
+code .date,           /* ChangeLog */
+code .time,           /* ChangeLog */
+code .oldfile,          /* diff */
+code .string,           /* generic */
+code .regexp,           /* generic */
+code .character {         /* generic */
+  color: #a8b87d
+}
+
+code .name,           /* ChangeLog */
+code .newfile,          /* diff */
+code .number {          /* generic */
+  color: #e87856;
+}
+
+code .file,           /* ChangeLog */
+code .function {        /* generic */
+  color: #e3e3e3;
+}
+
+code .selector,         /* css */
+code .type {          /* generic */
+  font-weight: bold;
+  color: #b5834a;
+}
+
+code .ip,             /* ChangeLog */
+code .property,         /* CSS */
+code .variable,         /* Perl */
+code .argument,         /* LaTeX */
+code .optionalargument      /* LaTeX */
+{
+  color: #869cbf;
+}
+
+code .preproc,          /* generic */
+code .comment {         /* generic */
+  color: #79737a;
+}
+
+/* code: unspecified */
+code .value { }         /* css */
+code .cbracket { }
+code .context { }
+code .usertype { }
+code .classname { }
+code .specialchar { }
+code .symbol { }
+code .todo { }
+code .linenum { }
+code .url { }
+
+/* named divs */
+#wrap {
+  width: 38em;
+  overflow: auto;
+  margin: 0 auto 1.5em auto;
+  padding: 1.5em 4em;
+  background-color: #fff;
+  border: 1px solid #c9c8c7;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+}
+
+#footer {
+  width: 100%;
+  float: left;
+  border-top: thin solid #c9c8c7;
+}
+
+#footer #author { }
+#footer #city { }
+#footer #date { }
+
+#footer .plusone {
+  position: relative;
+  top: 2px;
+}
+
+/* directory listings via ls.cgi */
+table.ls {
+  border: thin solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+table.ls th {
+  border: thin solid #ccc;
+  background-color: #eee;
+}
+
+table.ls tr.even {
+  background-color: #e9edf2;
+}
+
+table.ls th,
+table.ls td {
+  padding: 0.1em 1.5em;
+}
+
+table.ls td.size {
+  text-align: right;
+}
+
+/* Print Stylesheet */
+@page {
+  widows: 2;
+  orphans: 2;
+}
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  a:link,
+  a:visited {
+    color: #000;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  #content a:link:after,
+  #content a:visited:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+
+  #content a[href^="/"]:after {
+    content: " (http://jblevins.org" attr(href) ") ";
+  }
+
+  #wrap {
+    border: 0;
+  }
+}
