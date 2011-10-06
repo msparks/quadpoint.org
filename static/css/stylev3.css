@@ -1,6 +1,5 @@
 /* Layout. */
 html {
-  background-color: #fff;
   background-color: #a4acb4;
 }
 
@@ -70,11 +69,6 @@ p {
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
   margin: 0;
   padding: 0;
-}
-
-html {
-  overflow-y: scroll;     /* force scrollbar */
-  background-color: #e0ddda;
 }
 
 body {
@@ -409,145 +403,14 @@ h1 + div.subtitle {
   text-transform: uppercase;
 }
 
-/* error pages */
-.error .icon {
-  float: left;
-  font-size: 4em;
-  line-height: 1em;
-  margin-right: 0.2em;
-  color: #900;
-}
-
-/* code (from Twilight Color Theme for Emacs) */
-code .difflines,        /* diff */
-code .bold {          /* generic */
-  font-weight: bold;
-}
-
-code .italics {         /* generic */
-  font-style: italic;
-}
-
-code .underline {         /* LaTeX */
-  text-decoration: underline;
-}
-
-code .fixed {           /* LaTeX */
-  font-family: monospace;
-}
-
-code .bibtex,           /* LaTeX */
-code .keyword {         /* generic */
-  font-weight: bold;
-  color: #e5bc75;
-}
-
-code .math,           /* LaTeX */
-code .date,           /* ChangeLog */
-code .time,           /* ChangeLog */
-code .oldfile,          /* diff */
-code .string,           /* generic */
-code .regexp,           /* generic */
-code .character {         /* generic */
-  color: #a8b87d
-}
-
-code .name,           /* ChangeLog */
-code .newfile,          /* diff */
-code .number {          /* generic */
-  color: #e87856;
-}
-
-code .file,           /* ChangeLog */
-code .function {        /* generic */
-  color: #e3e3e3;
-}
-
-code .selector,         /* css */
-code .type {          /* generic */
-  font-weight: bold;
-  color: #b5834a;
-}
-
-code .ip,             /* ChangeLog */
-code .property,         /* CSS */
-code .variable,         /* Perl */
-code .argument,         /* LaTeX */
-code .optionalargument      /* LaTeX */
-{
-  color: #869cbf;
-}
-
-code .preproc,          /* generic */
-code .comment {         /* generic */
-  color: #79737a;
-}
-
-/* code: unspecified */
-code .value { }         /* css */
-code .cbracket { }
-code .context { }
-code .usertype { }
-code .classname { }
-code .specialchar { }
-code .symbol { }
-code .todo { }
-code .linenum { }
-code .url { }
-
-/* named divs */
-#wrap {
-  width: 38em;
-  overflow: auto;
-  margin: 0 auto 1.5em auto;
-  padding: 1.5em 4em;
-  background-color: #fff;
-  border: 1px solid #c9c8c7;
-  -moz-border-radius: 0.2em;
-  -webkit-border-radius: 0.2em;
-}
-
 #footer {
   width: 100%;
   float: left;
   border-top: thin solid #c9c8c7;
 }
 
-#footer #author { }
-#footer #city { }
-#footer #date { }
 
-#footer .plusone {
-  position: relative;
-  top: 2px;
-}
-
-/* directory listings via ls.cgi */
-table.ls {
-  border: thin solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-}
-
-table.ls th {
-  border: thin solid #ccc;
-  background-color: #eee;
-}
-
-table.ls tr.even {
-  background-color: #e9edf2;
-}
-
-table.ls th,
-table.ls td {
-  padding: 0.1em 1.5em;
-}
-
-table.ls td.size {
-  text-align: right;
-}
-
-/* Print Stylesheet */
+/* Print stylesheet. */
 @page {
   widows: 2;
   orphans: 2;
@@ -578,7 +441,7 @@ table.ls td.size {
   }
 
   #content a[href^="/"]:after {
-    content: " (http://jblevins.org" attr(href) ") ";
+    content: " (http://quadpoint.org" attr(href) ") ";
   }
 
   #wrap {
