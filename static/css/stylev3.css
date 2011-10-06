@@ -34,19 +34,21 @@ body {
 
 /* The visible paper-like page. */
 .page {
+  background-color: #fff;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 606px;
   border: 1px solid #758392;
   border-radius: 3px;
-  padding: 65px;
-  padding-top: 40px;
-  background-color: #fff;
+  padding: 40px 65px 40px 65px;
+  position: relative;
+  top: 1.7em;
 }
 
 /* Meta text. */
 .meta {
   font-family: "Myriad Pro", "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+  color: #999;
 }
 
 /* Short description for the title. */
@@ -65,6 +67,33 @@ p {
   text-align: justify;
 }
 
+/* Profile information on index. */
+div.profile {
+  min-height: 260px;
+}
+div.profile img {
+  border: 1px solid #d9d8d7;
+  float: right;
+  margin-left: 20px;
+  padding: 3px;
+  width: 230px;
+}
+div.profile ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+div.profile li + li {
+  margin-top: 15px;
+}
+div.profile li a {
+  display: inline-block;
+  font-size: 20px;
+}
+div.profile span {
+  padding-left: 20px;
+}
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
   margin: 0;
@@ -140,10 +169,6 @@ h4 {
 .subtitle, .meta {
   font-size: 0.875em;
   line-height: 1.714em;
-}
-
-#footer {
-  margin-top: 1.5em;
 }
 
 h1 + div.subtitle {
@@ -403,7 +428,7 @@ h1 + div.subtitle {
   text-transform: uppercase;
 }
 
-#footer {
+div.footer {
   width: 100%;
   float: left;
   border-top: thin solid #c9c8c7;

@@ -1,30 +1,36 @@
 ---
-layout: default
-title: The website of Matt Sparks
+layout: home
+title: quadpoint.org
 ---
 
-# The website of Matt Sparks
+# Matt Sparks
 
-Hi, I'm Matt, and this is my website. This is my outlet for documenting my
-[projects](/projects) and other published [works](works).
+<div class="subtitle meta">
+  Semi-jaded Computer Enthusiast &amp; Software Engineer
+</div>
 
-## Site updates
+<div class="profile">
+  <img
+   src="https://lh6.googleusercontent.com/-ysLaIDYFcBU/ThSKMa5kpAI/AAAAAAAAABs/2L8PfbbJjYE/s288/Matt%252520Sparks.jpg"
+   title="Matt Sparks" class="profile" />
 
-* 2010-08-08: New site design. The site is now being generated with the static
-  rewrite of [Infinite Machine](/projects/infinitemachine).
-* 2010-02-06: Infinite caching implemented and enabled in
-  [Infinite Machine](/projects/infinitemachine). Site should be speedy.
-* 2009-04-30: [blog](/blog) added.
-* 2009-04-13: [quadpoint.org](http://quadpoint.org) is now running on
-  [Infinite Machine](/projects/infinitemachine).
+  <ul>
+    <li>
+      <a href="/articles">Articles</a><br />
+      <span>Articles and talks on various subjects.</span>
+    </li>
+    <li>
+      <a href="/notes">Notes</a><br />
+      <span>Informal written notes.</span>
+    </li>
+    <li>
+      <a href="/projects">Projects</a><br />
+      <span>Software and hardware projects, new and old.</span>
+    </li>
+  </ul>
 
-## Abridged site index
-
-* [Works](/works)<br />
-  Articles and papers I've written, and talks I've given.
-* [Projects](/projects)<br />
-  Projects I'm working on.
-* [Bio](/bio) <br />
-  More about me.
-* [Contact](/contact)<br />
-  Contact me.
+  <p>
+    <a href="mailto:ms@quadpoint.org">ms@quadpoint.org</a> &#183;
+    <a href="#">Google+</a>
+  </p>
+</div>
