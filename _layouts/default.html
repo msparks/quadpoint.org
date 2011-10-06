@@ -4,9 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css">
   <link rel="stylesheet" media="all" type="text/css" href="/static/css/pygments_style.css" />
-  <link rel="stylesheet" media="screen" type="text/css" href="/static/css/jquery.lightbox.css" />
   <link rel="stylesheet" media="all" type="text/css"  href="/static/css/stylev3.css" />
   <link rel="stylesheet" media="all" type="text/css" href="/static/css/libgithub.css" />
   <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
@@ -16,28 +14,22 @@
   <script type="text/javascript" src="/static/js/libgithub.min.js"></script>
   <script type="text/javascript"
           src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  <script type="text/javascript">
-    $(function() {
-      $('a.lightbox').lightBox({
-        imageLoading: '/static/images/lightbox-ico-loading.gif',
-        imageBtnClose: '/static/images/lightbox-btn-close.gif',
-        imageBtnPrev: '/static/images/lightbox-btn-prev.gif',
-        imageBtnNext: '/static/images/lightbox-btn-next.gif'});
-    });
-  </script>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <span class="path meta">quadpoint.org</span>
-      <span class="nav meta">Articles &#183; Projects &#183; Bio</span>
+      <span class="path meta"><a href="/">quadpoint.org</a></span>
+      <span class="nav meta">
+        <a href="/projects">Projects</a> &#183;
+        <a href="/articles">Articles</a> &#183;
+        <a href="/notes">Notes</a>
+      </span>
     </div>
     <div class="page">
       {{ content }}
 
       <div class="footer">
-        <span class="meta">Last modified: {{ site.date }}</span>
+        <span class="meta">Last modified: {{ 'now' | date:"%B %d, %Y" }}</span>
       </div>
     </div>
   </div>

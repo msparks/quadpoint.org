@@ -16,16 +16,16 @@ title: quadpoint.org
 
   <ul>
     <li>
+      <a href="/projects">Projects</a><br />
+      <span>Software and hardware projects, new and old.</span>
+    </li>
+    <li>
       <a href="/articles">Articles</a><br />
       <span>Articles and talks on various subjects.</span>
     </li>
     <li>
       <a href="/notes">Notes</a><br />
       <span>Informal written notes.</span>
-    </li>
-    <li>
-      <a href="/projects">Projects</a><br />
-      <span>Software and hardware projects, new and old.</span>
     </li>
   </ul>
 
