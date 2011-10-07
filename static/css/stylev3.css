@@ -47,7 +47,7 @@ body {
   width: 606px;
   border: 1px solid #758392;
   border-radius: 3px;
-  padding: 40px 65px 40px 65px;
+  padding: 40px 65px 25px 65px;
   position: relative;
   top: 23px;
 }
@@ -437,9 +437,8 @@ h1 + div.subtitle {
 
 div.footer {
   width: 100%;
-  float: left;
-  margin-top: 15px;
   border-top: thin solid #c9c8c7;
+  margin-top: 15px;
 }
 
 
