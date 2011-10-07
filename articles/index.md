@@ -11,7 +11,7 @@ title: Articles
 : This guide details the use of the IRC client Irssi and the terminal
   multiplexer GNU screen. Many areas are covered, including basic commands,
   configuration and client customization. The purpose of screen is explained
-  and its usage together with Irssi is also detailed.
+  and its usage together with Irssi is also covered.
 
 [Irssi Documentation and Resources](/articles/irssidoc) <span class="meta">| 2005</span>
 : A small collection of sources for information and scripts for Irssi, provided
