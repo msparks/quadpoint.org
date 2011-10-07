@@ -1,7 +1,8 @@
 ---
-layout: new
-title: Engine Yard hashing contest post-mortem
+layout: default
+title: Engine Yard hashing contest postmortem
 date: 2009-07-21 23:50:00
+Time-stamp: <2011-10-07 00:05:46>
 ---
 
 # {{ page.title }}
@@ -18,7 +19,7 @@ given dictionary, and optionally 5 ASCII characters appended to the end. I've
 spent the last several evenings writing, rewriting, and optimizing my C
 implementation and distributed infrastructure.
 
-This is my _post-mortem_ of the project.
+This is my _postmortem_ of the project.
 
 ## About the contest
 

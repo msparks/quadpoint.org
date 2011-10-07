@@ -29,7 +29,13 @@
       {{ content }}
 
       <div class="footer">
-        <span class="meta">Last modified: {{ 'now' | date:"%B %e, %Y" }}</span>
+        <span class="meta">
+          {% if page.date %}Posted {{ page.date | date:"%B %e, %Y" }}{% endif %}
+          {% if page.Time-stamp %}
+          {% if page.date %}&#183;{% endif %}
+          Modified {{ page.Time-stamp | date:"%B %e, %Y" }}
+          {% endif %}
+        </span>
       </div>
     </div>
   </div>
