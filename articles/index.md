@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Articles
+Time-stamp: <2011-10-07 02:00:31>
 ---
 
 # {{ page.title }}
