@@ -1,3 +1,9 @@
+---
+layout: default
+title: Projects
+Time-stamp: <2011-10-07 02:06:39>
+---
+
 = Projects =
 
 This is a collection of public projects I've started or worked on. Most are
