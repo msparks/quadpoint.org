@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2011-10-10 22:28:29>
+Time-stamp: <2011-10-10 22:58:00>
 ---
 
 # {{ page.title }}
@@ -40,13 +40,24 @@ $(window).load(function () {
 });
 </script>
 
-### dotfiles
 
-<a href="/projects/dotfiles" title="dotfiles"><img
-src="/projects/dotfiles/dotfiles.png" width="75" height="75" alt="dotfiles"
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/dotfiles" title="dotfiles"><img
+    src="/projects/dotfiles/dotfiles.png" width="75" height="75"
+    alt="dotfiles" /></a>
+  </div>
 
-Configuration files.
+  <a href="/projects/dotfiles" class="project-link">dotfiles</a>
+
+  <div class="project-desc">
+    Configuration files.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="dotfiles-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -55,17 +66,25 @@ $(window).load(function () {
   al.targetIs('#dotfiles-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="dotfiles-commit"></span>
 
-**View project:** [[projects/dotfiles]]
 
-### git-score
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/git-score" title="git-score"><img
+    src="/projects/git-score/git-score.png" width="75" height="75"
+    alt="git-score" /></a>
+  </div>
 
-<a href="/projects/git-score" title="git-score"><img
-src="/projects/git-score/git-score.png" width="75" height="75" alt="git-score"
-class="left" /></a>
+  <a href="/projects/git-score" class="project-link">git-score</a>
 
-Compute scores for contributors to a git repository.
+  <div class="project-desc">
+    Compute scores for contributors to a git repository.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="git-score-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -74,17 +93,25 @@ $(window).load(function () {
   al.targetIs('#git-score-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="git-score-commit"></span>
 
-**View project:** [[projects/git-score]]
 
-### Infinite Machine
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/infinitemachine" title="infinitemachine"><img
+    src="/projects/infinitemachine/infinitemachine.png" width="75" height="75"
+    alt="infinitemachine" /></a>
+  </div>
 
-<a href="/projects/infinitemachine" title="infinitemachine"><img
-src="/projects/infinitemachine/infinitemachine.png" width="75" height="75"
-alt="infinitemachine" class="left" /></a>
+  <a href="/projects/infinitemachine" class="project-link">infinitemachine</a>
 
-The program that generates this website.
+  <div class="project-desc">
+    A static content website generator.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="infinitemachine-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -93,17 +120,26 @@ $(window).load(function () {
   al.targetIs('#infinitemachine-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="infinitemachine-commit"></span>
 
-**View project:** [[projects/infinitemachine]]
 
-### Irssi scripts
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/irssiscripts" title="irssiscripts"><img
+    src="/projects/irssiscripts/irssiscripts.png" width="75" height="75"
+    alt="irssiscripts" /></a>
+  </div>
 
-<a href="/projects/irssiscripts" title="irssiscripts"><img
-src="/projects/irssiscripts/irssiscripts.png" width="75" height="75"
-alt="irssiscripts" class="left" /></a>
+  <a href="/projects/irssiscripts" class="project-link">irssiscripts</a>
 
-A collection of scripts I have written for [[http://irssi.org|Irssi]].
+  <div class="project-desc">
+    A collection of scripts I have written
+    for <a href="http://irssi.org">Irssi</a>.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="irssiscripts-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -112,18 +148,26 @@ $(window).load(function () {
   al.targetIs('#irssiscripts-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="irssiscripts-commit"></span>
 
-**View project:** [[projects/irssiscripts]]
 
-### libgithub
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/libgithub" title="libgithub"><img
+    src="/static/images/questionmark.png" width="75" height="75"
+    alt="libgithub" /></a>
+  </div>
 
-<a href="/projects/libgithub" title="libgithub"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+  <a href="/projects/libgithub" class="project-link">libgithub</a>
 
-A JavaScript library to display GitHub data on websites. It populates the
-'Activity' lines on this page.
+  <div class="project-desc">
+    A JavaScript library to display GitHub data on websites. It populates the
+    'Activity' lines on this page.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="libgithub-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -132,27 +176,52 @@ $(window).load(function () {
   al.targetIs('#libgithub-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="libgithub-commit"></span>
 
-**View project:** [[projects/libgithub]]
 
-### Pastee
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/pastee" title="pastee"><img
+    src="/static/images/questionmark.png" width="75" height="75"
+    alt="pastee" /></a>
+  </div>
 
-<a href="/projects/pastee" title="pastee"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+  <a href="/projects/pastee" class="project-link">pastee</a>
 
-My [[wp>pastebin]].
+  <div class="project-desc">
+    A secure pastebin.
+  </div>
 
-**View project:** [[projects/pastee]]
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="pastee-commit"></span>
+  </div>
+</div>
 
-### svcshare
+<script type="text/javascript">
+$(window).load(function () {
+  var al = new libgithub.ActivityLine('msparks', 'pastee');
+  al.gravatarSizeIs(0);
+  al.targetIs('#pastee-commit');
+});
+</script>
 
-<a href="/projects/svcshare" title="svcshare"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
 
-A distributed queueing system.
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/svcshare" title="svcshare"><img
+    src="/static/images/questionmark.png" width="75" height="75"
+    alt="svcshare" /></a>
+  </div>
+
+  <a href="/projects/svcshare" class="project-link">svcshare</a>
+
+  <div class="project-desc">
+    A distributed queueing system.
+  </div>
+
+  <div class="project-activity">
+    <strong>Activity:</strong> <span id="svcshare-commit"></span>
+  </div>
+</div>
 
 <script type="text/javascript">
 $(window).load(function () {
@@ -161,9 +230,6 @@ $(window).load(function () {
   al.targetIs('#svcshare-commit');
 });
 </script>
-<strong>Activity:</strong> <span id="svcshare-commit"></span>
-
-**View project:** [[projects/svcshare]]
 
 ## Completed and Inactive Projects
 
