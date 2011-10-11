@@ -1,16 +1,113 @@
+/* Reset. */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Layout. */
 html {
   background-color: #a4acb4;
+  font-size: 1.0em;
 }
 
 body {
   background-color: #a4acb4;
-  color: #666;
+  color: #333;
   font-family: "Minion Pro", "Adobe Garamond Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
   font-size: 16px;
 }
+
+
+/* Headers and subtitles. */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-style: normal;
+  color: #111;
+  clear: left;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.333em;
+  margin-top: 0.22em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.0em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-top: 1.333em;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.0em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+h1 a:link,
+h2 a:link {
+  color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover {
+  color: #555;
+}
+
+/* Short description for the title. */
+.subtitle {
+  color: #999;
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 1.6em;
+}
+
+.subtitle, .meta {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+
+h1 + div.subtitle {
+  margin-top: -1.6em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+h1 + h2 {
+  margin-top: -0.3em;
+}
+
+
+/* Meta text. */
+.meta {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+  color: #999;
+}
+.meta a {
+  color: #999;
+  text-decoration: none;
+  border: 0;
+}
+.meta a:hover {
+  color: #333;
+}
+
 
 /* Header/breadcrumbs above page. */
 .header {
@@ -39,6 +136,15 @@ body {
   color: #555;
 }
 
+
+/* Page footer. */
+div.footer {
+  width: 100%;
+  border-top: thin solid #c9c8c7;
+  margin-top: 15px;
+}
+
+
 /* The visible paper-like page. */
 .page {
   background-color: #fff;
@@ -52,27 +158,6 @@ body {
   top: 23px;
 }
 
-/* Meta text. */
-.meta {
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
-  color: #999;
-}
-
-/* Short description for the title. */
-.subtitle {
-  font-size: 13px;
-  line-height: 25px;
-  color: #999;
-}
-
-/* Content text. */
-p {
-  color: #333;
-  font-size: 15px;
-  line-height: 22px;
-  margin: 0 0 22px 0;
-  text-align: justify;
-}
 
 /* Profile information on index. */
 div.profile {
@@ -102,95 +187,49 @@ div.profile span {
   padding-left: 20px;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  margin: 0 auto;
-  font-family: "Minion Pro", "Adobe Garamond Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
-  font-variant-ligatures: common-ligatures;
-  -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
-  color: #333;
-}
-
-/* font size and rhythm */
-html {
-  font-size: 1.0em;
-}
-
-p, dt, dd {
-  font-size: 1.0em;
-  line-height: 1.5em;
-}
-
+/* Content text. */
 p {
+  color: #333;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 22px 0;
   text-align: justify;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-pre, blockquote {
-  font-size: 0.875em;
-  line-height: 1.714em;
-  padding: .857em 1em;
-  margin-bottom: 1.714em;
+small, #notes > li > p {
+  font-size: 0.813em;
+  line-height: 1.846em;
 }
 
-math[display=block] {
+
+/* Lists. */
+ul, ol {
+  padding-left: 1.8em;
+}
+
+li {
+  line-height: 1.6em;
+}
+
+
+/* Definition lists. */
+dt, dd {
   font-size: 1.0em;
   line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+}
+dd {
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
-h1 {
-  font-size: 2.25em;
-  line-height: 1.333em;
-  margin-top: 0.22em;
-  margin-bottom: 0.5em;
-}
 
-h2 {
-  font-size: 1.5em;
-  line-height: 1.0em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.125em;
-  line-height: 1.333em;
-  margin-top: 1.333em;
-  margin-bottom: 0;
-}
-
-h4 {
-  font-size: 1.0em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0;
-}
-
-.subtitle, .meta {
-  font-size: 0.875em;
-  line-height: 1.714em;
-}
-
-h1 + div.subtitle {
-  margin-top: -1.6em;
-}
-
-div.subtitle {
-  margin-bottom: 1.6em;
-}
-
-h1 + h2 {
-  margin-top: -0.3em;
-}
-
+/* Horizontal rules. */
 hr {
+  border: none;
+  border-top: thin solid #c9c8c7;
   height: 1.6em;
   margin-top: 1.6em;
 }
@@ -199,71 +238,76 @@ hr + h2 {
   margin-top: 0.5em;
 }
 
-a.noteref {
-  font-size: 0.75em;
-  line-height: 1.0em;
-}
 
-small, #notes > li > p {
-  font-size: 0.813em;
-  line-height: 1.846em;
-}
-
-li {
-  line-height: 1.6em;
-}
-
-input {
-  font-size: 1.0em;
-}
-
-/* links */
+/* Links. */
 a {
   color: #004491;
   text-decoration: none;
 }
-
 a:hover {
   color: #555;
 }
 
-/* lists */
-ul, ol {
-  padding-left: 1.8em;
-}
 
-/* headers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  font-style: normal;
-  color: #111;
-  clear: left;
-}
-
-h1 a:link,
-h2 a:link {
-  color: inherit;
-}
-
-h1 a:hover,
-h2 a:hover {
-  color: #555;
-}
-
-h3 {
-  font-style: italic;
-}
-
+/* Abbreviations and acronyms. */
 abbr {
   letter-spacing: 0.1em;
 }
 
-/* bordered environments */
+abbr[title], acronym[title] {
+  border-bottom: 1px dotted #d3dfee;
+}
+
+
+/* Tables. */
+table {
+  border-top: double #999897;
+  border-bottom: thin solid #999897;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+th {
+  border-bottom: thin solid #999897;
+}
+
+td {
+  padding: 0 0.5em;
+}
+
+table.plain {
+  border-top: none;
+  border-bottom: none;
+}
+
+table.plain th {
+  border-bottom: none;
+}
+
+
+/* Math. */
+math[display=block] {
+  font-size: 1.0em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  overflow: auto;
+}
+
+math {
+  white-space: nowrap;
+}
+
+merror {
+  display: inline;
+}
+
+.eq-number {
+  float: right;
+}
+
+
+/* Bordered environments. */
 blockquote,
 code,
 kbd {
@@ -273,11 +317,15 @@ kbd {
   -webkit-border-radius: 0.2em;
 }
 
-abbr[title], acronym[title] {
-  border-bottom: 1px dotted #d3dfee;
+
+/* Monospace environments. */
+pre, blockquote {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  padding: .857em 1em;
+  margin-bottom: 1.714em;
 }
 
-/* monospace environments */
 code,
 pre,
 kbd {
@@ -308,62 +356,18 @@ kbd {
   padding: 0 0.3ex;
 }
 
+
+/* Blockquote. */
 blockquote {
   border-left: thick solid #e0ddda;
   padding: 0 1em;
 }
 
-hr {
-  border: none;
-  border-top: thin solid #c9c8c7;
-}
 
-table {
-  border-top: double #999897;
-  border-bottom: thin solid #999897;
-  border-spacing: 0;
-  margin: 0 auto;
-}
-
-th {
-  border-bottom: thin solid #999897;
-}
-
-td {
-  padding: 0 0.5em;
-}
-
-table.plain {
-  border-top: none;
-  border-bottom: none;
-}
-
-table.plain th {
-  border-bottom: none;
-}
-
-dd {
-  margin-left: 1.5em;
-}
-
-merror {
-  display: inline;
-}
-
-math[display=block] {
-  overflow: auto;
-}
-
-math {
-  white-space: nowrap;
-}
-
-.eq-number {
-  float: right;
-}
-
-/* footnotes */
+/* Footnotes. */
 a.noteref {
+  font-size: 0.75em;
+  line-height: 1.0em;
   vertical-align: super;
 }
 
@@ -379,7 +383,8 @@ a.noteref, sup a:link, sup a:visited {
   display: inline;
 }
 
-/* images */
+
+/* Images. */
 p img {
   float: right;
   padding-left: 1em;
@@ -418,27 +423,6 @@ div.image p strong {
   text-transform: uppercase;
   font-weight: normal;
   font-style: normal;
-}
-
-.meta a {
-  color: #999;
-  text-decoration: none;
-  border: 0;
-}
-
-.meta a:hover {
-  color: #333;
-}
-
-h1 + div.subtitle {
-  position: relative;
-  text-transform: uppercase;
-}
-
-div.footer {
-  width: 100%;
-  border-top: thin solid #c9c8c7;
-  margin-top: 15px;
 }
 
 
