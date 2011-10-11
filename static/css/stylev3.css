@@ -188,6 +188,20 @@ div.profile span {
 }
 
 
+/* Information about a project on Projects index. */
+div.project {
+  margin: 0 0 20px 0;
+  min-height: 75px;
+}
+div.project div.project-icon {
+  margin-right: 15px;
+}
+
+div.project div.project-desc {
+  margin: 10px 14px 14px 120px;
+}
+
+
 /* Content text. */
 p {
   color: #333;
@@ -384,6 +398,11 @@ a.noteref, sup a:link, sup a:visited {
 }
 
 
+/* Arrangement. */
+div.left {
+  float: left;
+}
+
 /* Images. */
 p img {
   float: right;
@@ -391,15 +410,14 @@ p img {
 }
 
 div.image {
-  width: 100%;
-  padding: 1.5em 0;
   display: inline-block;
-  vertical-align: middle;
+}
+
+div.image.left {
+  margin: 0 5px 5px 0;
 }
 
 div.image img {
-  display: block;
-  margin: 0 auto;
   border: thin solid #d9d8d7;
   padding: 3px;
 }
