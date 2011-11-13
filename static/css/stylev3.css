@@ -76,7 +76,7 @@ h2 a:hover {
   color: #999;
   font-size: 13px;
   line-height: 25px;
-  margin-bottom: 1.6em;
+  margin-bottom: 15px;
 }
 
 .subtitle, .meta {
@@ -213,10 +213,8 @@ div.project a.project-link {
 p {
   color: #333;
   line-height: 22px;
-  margin: 0 0 22px 0;
+  margin: 15px 0 15px 0;
   text-align: justify;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
 }
 
 small, #notes > li > p {
