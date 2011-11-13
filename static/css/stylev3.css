@@ -15,7 +15,7 @@ html {
 body {
   background-color: #a4acb4;
   color: #333;
-  font-family: "Minion Pro", "Adobe Garamond Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
+  font-family: Tinos, Garamond, serif;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
   font-size: 16px;
@@ -26,6 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-style: normal;
+  font-family: Tinos, Garamond, serif;
   color: #111;
   clear: left;
 }
@@ -96,7 +97,7 @@ h1 + h2 {
 
 /* Meta text. */
 .meta {
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+  font-family: Molengo, "Helvetica Neue", Helvetica, "Trebuchet MS", sans-serif;
   color: #999;
 }
 .meta a {
@@ -211,7 +212,6 @@ div.project a.project-link {
 /* Content text. */
 p {
   color: #333;
-  font-size: 15px;
   line-height: 22px;
   margin: 0 0 22px 0;
   text-align: justify;
@@ -349,10 +349,9 @@ pre, blockquote {
 code,
 pre,
 kbd {
-  font-family: Inconsolata, Terminus, Consolas, "Liberation Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", Monaco, "Lucida Console", "Lucida Sans Typewriter", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 12px;
 }
-
-code { }
 
 pre {
   background-color: #202224;
