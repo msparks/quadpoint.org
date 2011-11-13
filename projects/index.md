@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2011-11-13 04:59:31>
+Time-stamp: <2011-11-13 05:40:38>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -25,8 +25,8 @@ use it frequently.
     DS1620 digital thermometer library for Arduino.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="arduino-ds1620-commit"></span>
+  <div class="project-activity meta">
+    <span id="arduino-ds1620-commit"></span>
   </div>
 </div>
 
@@ -52,8 +52,8 @@ $(window).load(function () {
     Configuration files.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="dotfiles-commit"></span>
+  <div class="project-activity meta">
+    <span id="dotfiles-commit"></span>
   </div>
 </div>
 
@@ -79,8 +79,8 @@ $(window).load(function () {
     Compute scores for contributors to a git repository.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="git-score-commit"></span>
+  <div class="project-activity meta">
+    <span id="git-score-commit"></span>
   </div>
 </div>
 
@@ -106,8 +106,8 @@ $(window).load(function () {
     A static content website generator.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="infinitemachine-commit"></span>
+  <div class="project-activity meta">
+    <span id="infinitemachine-commit"></span>
   </div>
 </div>
 
@@ -134,8 +134,8 @@ $(window).load(function () {
     for <a href="http://irssi.org">Irssi</a>.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="irssiscripts-commit"></span>
+  <div class="project-activity meta">
+    <span id="irssiscripts-commit"></span>
   </div>
 </div>
 
@@ -158,12 +158,12 @@ $(window).load(function () {
   <a href="/projects/libgithub" class="project-link">libgithub</a>
 
   <div class="project-desc">
-    A JavaScript library to display GitHub data on websites. It populates the
-    'Activity' lines on this page.
+    A JavaScript library to display GitHub data on websites. It populates
+    the 'Activity' lines on this page.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="libgithub-commit"></span>
+  <div class="project-activity meta">
+    <span id="libgithub-commit"></span>
   </div>
 </div>
 
@@ -189,8 +189,8 @@ $(window).load(function () {
     A secure pastebin.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="pastee-commit"></span>
+  <div class="project-activity meta">
+    <span id="pastee-commit"></span>
   </div>
 </div>
 
@@ -216,8 +216,8 @@ $(window).load(function () {
     A distributed queueing system.
   </div>
 
-  <div class="project-activity">
-    <strong>Activity:</strong> <span id="svcshare-commit"></span>
+  <div class="project-activity meta">
+    <span id="svcshare-commit"></span>
   </div>
 </div>
 
@@ -250,8 +250,8 @@ some of these may just be on hiatus.
     is used to control Alpha American LED signs.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2009
+  <div class="project-activity meta">
+    2009
   </div>
 </div>
 
@@ -269,8 +269,8 @@ some of these may just be on hiatus.
     DS1302 Real Time Clock (RTC) library for Arduino.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2009
+  <div class="project-activity meta">
+    2009
   </div>
 </div>
 
@@ -288,8 +288,8 @@ some of these may just be on hiatus.
     A utility to manage bills for a resource shared equally among many people.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2008
+  <div class="project-activity meta">
+    2008
   </div>
 </div>
 
@@ -307,8 +307,8 @@ some of these may just be on hiatus.
     A tool to visualize the relationships between RFCs.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2008
+  <div class="project-activity meta">
+    2008
   </div>
 </div>
 
@@ -329,8 +329,8 @@ some of these may just be on hiatus.
     area.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2006
+  <div class="project-activity meta">
+    2006
   </div>
 </div>
 
@@ -348,7 +348,7 @@ some of these may just be on hiatus.
     An easy way to rip DVDs on Linux.
   </div>
 
-  <div class="project-activity">
-    <strong>Project year:</strong> 2005
+  <div class="project-activity meta">
+    2005
   </div>
 </div>
