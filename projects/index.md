@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2011-11-13 04:36:28>
+Time-stamp: <2011-11-13 04:59:31>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -235,77 +235,120 @@ The projects I no longer frequently work on are listed here. However, unless
 otherwise specified, I do accept patches to these. It is also possible that
 some of these may just be on hiatus.
 
-### alphasign
 
-<a href="/projects/alphasign" title="alphasign"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/alphasign"
+    title="alphasign"><img src="/static/images/questionmark.png" width="75"
+    height="75" alt="alphasign" /></a>
+  </div>
 
-**Project year: 2009**
+  <a href="/projects/alphasign" class="project-link">alphasign</a>
 
-An implementation of the Alpha Sign Communications Protocol in Python. It is
-used to control Alpha American LED signs.
+  <div class="project-desc">
+    An implementation of the Alpha Sign Communications Protocol in Python. It
+    is used to control Alpha American LED signs.
+  </div>
 
-**View project:** [[projects/alphasign]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2009
+  </div>
+</div>
 
-### arduino-ds1302
 
-<a href="/projects/arduino-ds1302" title="arduino-ds1302"><img
-src="/static/images/questionmark.png" width="75" height="75" alt=""
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/arduino-ds1302"
+    title="arduino-ds1302"><img src="/static/images/questionmark.png"
+    width="75" height="75" alt="arduino-ds1302" /></a>
+  </div>
 
-**Project year: 2009**
+  <a href="/projects/arduino-ds1302" class="project-link">arduino-ds1302</a>
 
-DS1302 Real Time Clock (RTC) library for Arduino.
+  <div class="project-desc">
+    DS1302 Real Time Clock (RTC) library for Arduino.
+  </div>
 
-**View project:** [[projects/arduino-ds1302]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2009
+  </div>
+</div>
 
-### cscredits
 
-<a href="/projects/cscredits" title="cscredits"><img
-src="/projects/cscredits/cscredits.png" width="75" height="75" alt="cscredits"
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/cscredits"
+    title="cscredits"><img src="/projects/cscredits/cscredits.png" width="75"
+    height="75" alt="cscredits" /></a>
+  </div>
 
-**Project year: 2008**
+  <a href="/projects/cscredits" class="project-link">cscredits</a>
 
-A utility to manage bills for a resource shared equally among many people.
+  <div class="project-desc">
+    A utility to manage bills for a resource shared equally among many people.
+  </div>
 
-**View project:** [[projects/cscredits]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2008
+  </div>
+</div>
 
-### rfcgraph
 
-<a href="/projects/rfcgraph" title="rfcgraph"><img
-src="/projects/rfcgraph/rfcgraph.png" width="75" height="75" alt="rfcgraph"
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/rfcgraph"
+    title="rfcgraph"><img src="/projects/rfcgraph/rfcgraph.png" width="75"
+    height="75" alt="rfcgraph" /></a>
+  </div>
 
-**Project year: 2008**
+  <a href="/projects/rfcgraph" class="project-link">rfcgraph</a>
 
-A tool to visualize the relationships between RFCs.
+  <div class="project-desc">
+    A tool to visualize the relationships between RFCs.
+  </div>
 
-**View project:** [[projects/rfcgraph]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2008
+  </div>
+</div>
 
-### CUMTD Phone Interface
 
-<a href="/projects/cumtd" title="CUMTD Phone Interface"><img
-src="http://farm6.static.flickr.com/5129/5299728290_a11173930f_s.jpg"
-width="75" height="75" alt="WML phone interface listing upcoming buses"
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/cumtd"
+    title="cumtd">
+      <img src="http://farm6.static.flickr.com/5129/5299728290_a11173930f_s.jpg"
+      width="75" height="75" alt="WML phone interface listing upcoming buses"
+      /></a>
+  </div>
 
-**Project year: 2006**
+  <a href="/projects/cumtd" class="project-link">CUMTD Phone Interface</a>
 
-Displays upcoming bus information for various stops in the Champaign-Urbana
-area.
+  <div class="project-desc">
+    Displays upcoming bus information for various stops in the Champaign-Urbana
+    area.
+  </div>
 
-**View project:** [[projects/cumtd]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2006
+  </div>
+</div>
 
-### SimpleRip
 
-<a href="/projects/simplerip" title="SimpleRip"><img
-src="/projects/simplerip/simplerip.png" width="75" height="75" alt="SimpleRip"
-class="left" /></a>
+<div class="project">
+  <div class="project-icon image left">
+    <a href="/projects/simplerip"
+    title="simplerip"><img src="/projects/simplerip/simplerip.png" width="75"
+    height="75" alt="simplerip" /></a>
+  </div>
 
-**Project year: 2005**
+  <a href="/projects/simplerip" class="project-link">SimpleRip</a>
 
-An easy way to rip DVDs on Linux.
+  <div class="project-desc">
+    An easy way to rip DVDs on Linux.
+  </div>
 
-**View project:** [[projects/simplerip]]
+  <div class="project-activity">
+    <strong>Project year:</strong> 2005
+  </div>
+</div>
