@@ -23,8 +23,8 @@
     <div class="header">
       <span class="path meta"><a href="/">quadpoint.org</a></span>
       <span class="nav meta">
-        <a href="/projects">Projects</a> &#183;
-        <a href="/articles">Articles</a> &#183;
+        <a href="/projects">Projects</a> &middot;
+        <a href="/articles">Articles</a> &middot;
         <a href="/notes">Notes</a>
       </span>
     </div>
@@ -35,7 +35,7 @@
         <span class="meta">
           {% if page.date %}Posted {{ page.date | date:"%B %e, %Y" }}{% endif %}
           {% if page.Time-stamp %}
-          {% if page.date %}&#183;{% endif %}
+          {% if page.date %}&middot;{% endif %}
           Modified {{ page.Time-stamp | date:"%B %e, %Y" }}
           {% endif %}
         </span>

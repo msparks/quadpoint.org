@@ -19,7 +19,7 @@
         <span class="meta">
           {% if page.date %}Posted {{ page.date | date:"%B %e, %Y" }}{% endif %}
           {% if page.Time-stamp %}
-          {% if page.date %}&#183;{% endif %}
+          {% if page.date %}&middot;{% endif %}
           Modified {{ page.Time-stamp | date:"%B %e, %Y" }}
           {% endif %}
         </span>

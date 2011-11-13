@@ -1,7 +1,7 @@
 ---
 layout: home
 title: quadpoint.org
-Time-stamp: <2011-11-13 03:42:39>
+Time-stamp: <2011-11-13 03:53:05>
 ---
 
 # Matt Sparks
@@ -31,7 +31,7 @@ Time-stamp: <2011-11-13 03:42:39>
   </ul>
 
   <p>
-    <a href="mailto:ms@quadpoint.org">ms@quadpoint.org</a> &#183;
+    <a href="mailto:ms@quadpoint.org">ms@quadpoint.org</a> &middot;
     <a href="#">Google+</a>
   </p>
 </div>
