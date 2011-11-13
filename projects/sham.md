@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Engine Yard hashing contest postmortem
+parent: projects
 date: 2009-07-21 23:50:00
-Time-stamp: <2011-10-07 00:05:46>
+Time-stamp: <2011-11-13 04:17:39>
 ---
 
 # {{ page.title }}

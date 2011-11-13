@@ -21,7 +21,12 @@
 <body>
   <div class="container">
     <div class="header">
-      <span class="path meta"><a href="/">quadpoint.org</a></span>
+      <span class="path meta">
+        <a href="/">quadpoint.org</a>
+        {% if page.parent %}
+        &raquo; <a href="/{{ page.parent }}">{{ page.parent }}</a>
+        {% endif %}
+      </span>
       <span class="nav meta">
         <a href="/projects">Projects</a> &middot;
         <a href="/articles">Articles</a> &middot;

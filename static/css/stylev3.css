@@ -115,11 +115,14 @@ h1 + h2 {
   margin: 0 auto;
   width: 720px;
   padding: 0;
-  color: #004491;
+  color: #555;
 }
 .header a:link,
 .header a:visited {
-  color: inherit;
+  color: #004491;
+}
+.header a:hover {
+  border-bottom: 1px solid #004491;
 }
 
 .header .path {
