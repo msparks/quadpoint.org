@@ -1,7 +1,0 @@
-= Error 404: Not Found =
-
-{{{
-raw:true
-noescape:true
-<p>The path <strong id="pathname"><script language="javascript">document.write(location.pathname);</script></strong> was not found.</p>
-}}}
