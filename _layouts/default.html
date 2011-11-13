@@ -38,6 +38,7 @@
 
       {{ content }}
 
+      {% if page.date or page.Time-stamp %}
       <div class="footer">
         <span class="meta">
           {% if page.date %}Posted {{ page.date | date:"%B %e, %Y" }}{% endif %}
@@ -47,6 +48,7 @@
           {% endif %}
         </span>
       </div>
+      {% endif %}
     </div>
   </div>
 
