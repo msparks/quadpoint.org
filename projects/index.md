@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2011-10-10 22:58:00>
+Time-stamp: <2011-11-13 04:36:28>
 ---
-
-# {{ page.title }}
 
 This is a collection of public projects I've started or worked on. Most are
 software, but I have done a few electronics projects as well.

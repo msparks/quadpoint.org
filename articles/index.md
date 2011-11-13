@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Articles
-Time-stamp: <2011-10-07 02:00:31>
+Time-stamp: <2011-11-13 04:36:22>
 ---
-
-# {{ page.title }}
 
 <div class="subtitle meta">Guides and other interesting things</div>
 

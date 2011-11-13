@@ -3,8 +3,6 @@ layout: default
 title: "Matt Sparks: The Life and Times"
 ---
 
-# {{ page.title }}
-
 <a
 href="https://lh6.googleusercontent.com/-ysLaIDYFcBU/ThSKMa5kpAI/AAAAAAAAABs/2L8PfbbJjYE/s800/Matt%20Sparks.JPG"
 class="lightbox"><img

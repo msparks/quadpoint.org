@@ -3,10 +3,8 @@ layout: default
 title: Engine Yard hashing contest postmortem
 parent: projects
 date: 2009-07-21 23:50:00
-Time-stamp: <2011-11-13 04:17:39>
+Time-stamp: <2011-11-13 04:36:51>
 ---
-
-# {{ page.title }}
 
 <div class="subtitle meta">Basic performance tricks in C code</div>
 

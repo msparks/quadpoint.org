@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Notes
-Time-stamp: <2011-10-07 01:59:17>
+Time-stamp: <2011-11-13 04:36:40>
 ---
-
-# {{ page.title }}
 
 <div class="subtitle meta">With high entropy</div>
 
