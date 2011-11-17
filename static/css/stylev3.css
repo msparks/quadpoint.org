@@ -9,13 +9,13 @@ p, blockquote, th, td {
 /* Layout. */
 html {
   background-color: #a4acb4;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg2.png);
   font-size: 1.0em;
 }
 
 body {
   background-color: #a4acb4;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg2.png);
   color: #333;
   font-family: Tinos, Garamond, serif;
   font-variant-ligatures: common-ligatures;
@@ -117,15 +117,15 @@ h1 + h2 {
   margin: 0 auto;
   width: 720px;
   padding-bottom: 2px;
-  color: #cecece;
-  text-shadow: #262729 0 -1px 0;
+  color: #f0f0f0;
+  text-shadow: #333740 0 1px 1px;
 }
 .header a:link,
 .header a:visited {
-  color: #cecece;
+  color: #f0f0f0;
 }
 .header a:hover {
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .header .path {
