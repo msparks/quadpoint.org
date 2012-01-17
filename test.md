@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lorem ipsum dolor sit amet
-Time-stamp: <2012-01-13 02:27:21>
+Time-stamp: <2012-01-16 20:56:53>
 ---
 
 The purpose of this page is to try out typical syntaxes when writing
@@ -130,4 +130,7 @@ Here's an example of an image in a paragraph by itself.
 
 With a paragraph below it.
 
-And another paragraph below that.
+And another paragraph below
+that. [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) has support for
+HTML5 &lt;figure&gt; tags when an image constitutes an entire
+paragraph. However, tranditional markdown does not support this.
