@@ -1,7 +1,8 @@
 ---
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
-Time-stamp: <2012-01-16 23:12:17>
+date: 2004-12-19
+Time-stamp: <2012-01-16 23:22:25>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -752,6 +753,3 @@ sites:
   [Elizabeth Overal](http://lizzie.spod.cx/) - Another screen+irssi tutorial
   with some more information. Thanks for the link, lizzie.
 * [Blinkenshell](http://blinkenshell.org) - Free UNIX shell provider.
-
-Article originally written: December 19, 2004. It has been updated periodically
-since then.
