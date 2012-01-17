@@ -40,7 +40,7 @@ For this guide, I will be using the channels `#test2`, `#test3`, `#test4`, and
 `#test5`. The numbering starts at two to keep in sync with the window reference
 numbers (the status window is window 1).
 
-![screenshot 1](irssi-split-1.png)
+![screenshot 1](/articles/irssisplit/irssi-split-1.png)
 
 You can see from the above screenshot that 4 channels have been joined. The
 status window is named "S" and is window #1. The current window is **window**
@@ -62,7 +62,7 @@ window 2. This is done by using:
 
     /window show 2
 
-![screenshot 2](irssi-split-2.png)
+![screenshot 2](/articles/irssisplit/irssi-split-2.png)
 
 As you can see, the new container with `#test2` formed above the container with
 `#test5`, and \[the window containing\] `#test2` became the active window. By
@@ -113,7 +113,7 @@ the window in the current container:
 
 The result will look something like this:
 
-![screenshot 3](irssi-split-3.png)
+![screenshot 3](/articles/irssisplit/irssi-split-3.png)
 
 The numbers next to the word "Sticky:" are the reference numbers of the windows
 stuck to **that particular container**, *not* the various windows marked

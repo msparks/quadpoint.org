@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-16 23:22:25>
+Time-stamp: <2012-01-17 00:13:40>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -481,7 +481,7 @@ suitable for you. This includes changing the theme, adding or splitting
 windows, and manipulating the statusbars. I'll go over the basics of how to
 obtain a more complicated Irssi setup like this:
 
-![irssi screenshot (numbered)](irssi-numbered-600.png)
+![irssi screenshot (numbered)](/articles/irssi/irssi-numbered-600.png)
 
 ### Theme
 
