@@ -1,7 +1,7 @@
 ---
 layout: home
 title: quadpoint.org
-Time-stamp: <2011-11-13 04:37:38>
+Time-stamp: <2012-01-17 01:14:05>
 ---
 
 # Matt Sparks
@@ -30,8 +30,11 @@ Time-stamp: <2011-11-13 04:37:38>
     </li>
   </ul>
 
+  <br />
+
   <p>
-    <a href="mailto:ms@quadpoint.org">ms@quadpoint.org</a> &middot;
-    <a href="#">Google+</a>
+    <a href="//quadpoint.org/+">Google+</a> &middot;
+    <a href="https://github.com/msparks">GitHub</a> &middot;
+    <a href="http://www.google.com/recaptcha/mailhide/d?k=01XmI41AO9dnGjptk3Pk8atA==&c=9-5tTl2iipW4Xr593RNOJxOz9rqT6PZn68rt1CIhkGk=">E-mail</a>
   </p>
 </div>
