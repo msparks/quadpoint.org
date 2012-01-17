@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 00:13:40>
+Time-stamp: <2012-01-17 00:17:58>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -278,7 +278,7 @@ usually. This is executed by pressing the control key and the 'a' key at the
 same time, releasing both, and then pressing *letter*. At this point you should
 learn to detach from your screen session. Press *ctrl-a,d* to do this (Press
 ctrl-a, release, press d). When this is done, you should see something like
-"[detached]" print to your terminal. If you see this, you're no longer in
+"\[detached\]" print to your terminal. If you see this, you're no longer in
 screen, but Irssi is still running in the background. For effect, feel
 free to disconnect from your shell completely and then log back in before
 continuing to the next step.
