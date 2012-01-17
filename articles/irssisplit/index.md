@@ -1,7 +1,7 @@
 ---
 layout: default
 title: An Illustrated Guide to Split Windows in Irssi
-date: October 2005
+date: 2005-10-16
 ---
 
 The ability to create "split" windows in [Irssi](http://irssi.org) is one of
