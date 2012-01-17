@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Articles
-Time-stamp: <2011-11-13 04:36:22>
+Time-stamp: <2012-01-16 23:18:07>
 ---
 
 <div class="subtitle meta">Guides and other interesting things</div>
@@ -11,11 +11,6 @@ Time-stamp: <2011-11-13 04:36:22>
   multiplexer GNU screen. Many areas are covered, including basic commands,
   configuration and client customization. The purpose of screen is explained
   and its usage together with Irssi is also covered.
-
-[Irssi Documentation and Resources](/articles/irssidoc) <span class="meta">| 2005</span>
-: A small collection of sources for information and scripts for Irssi, provided
-  as a supplement for the official client website,
-  [irssi.org](http://irssi.org).
 
 [An Illustrated Guide to Split Windows in Irssi](/articles/irssisplit) <span class="meta">| 2005</span>
 : An explanation and walkthrough of creating and manipulating split windows in
