@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 00:49:23>
+Time-stamp: <2012-01-17 01:01:55>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -206,7 +206,7 @@ following scripts to start:
   Makes population of the current channel available for display in the status
   bar. Read the script for instructions for use.
 
-### Defining your networks
+### Defining networks and servers
 
 By now you should have a good start to using Irssi for your needs. Irssi is
 simple to use. You can learn a great deal about Irssi by reading its help. Type
