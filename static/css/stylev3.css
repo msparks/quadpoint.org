@@ -162,7 +162,7 @@ div.footer {
   background-color: #fff;
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 606px;
+  width: 608px;
   border: 1px solid #758392;
   border-radius: 3px;
   padding: 40px 65px 25px 65px;
@@ -302,6 +302,10 @@ table {
   border-bottom: thin solid #999897;
   border-spacing: 0;
   margin: 0 auto;
+}
+
+tr {
+  line-height: 1.3em;
 }
 
 th {
