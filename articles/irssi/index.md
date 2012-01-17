@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 00:29:32>
+Time-stamp: <2012-01-17 00:49:23>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -21,6 +21,8 @@ users can "detach" from their screens, logout, and then at a later time, login
 again "reattach" to find their programs still running just as they left
 them. The steps to do this are explained in this guide.
 
+<ul id="toc">
+</ul>
 
 ## Irssi Basics
 
