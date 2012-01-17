@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lorem ipsum dolor sit amet
-Time-stamp: <2012-01-16 20:56:53>
+Time-stamp: <2012-01-16 21:29:16>
 ---
 
 The purpose of this page is to try out typical syntaxes when writing
@@ -83,6 +83,11 @@ tristique. Integer a diam erat, eget tincidunt quam.
 
 1. And an
 2. Ordered list
+
+#### List after an H4
+
+* Another
+* List
 
 ## Paragraph, then a list
 
