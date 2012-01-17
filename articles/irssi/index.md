@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 00:17:58>
+Time-stamp: <2012-01-17 00:29:32>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -531,6 +531,14 @@ have all lines containing your nick hilighted, type `/hilight -word
 yournick`. See `/help hilight` for advanced features. Use `/layout save` to
 save your layout settings and have irssi automatically recreate the split
 hilight window on startup.
+
+> Note: you may notice that when starting up a fresh Irssi instance after
+> having configured the hilight window, the active window is the hilight window
+> instead of the status window. If you connect to servers with the hilight
+> window active, your channels may be placed in the top container instead of
+> the bottom container as you would expect. A simple workaround for this is to
+> simply hit `Alt-1` to switch to your status window, which is in the bottom
+> container, before you connect.
 
 ### Statusbar
 
