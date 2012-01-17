@@ -425,8 +425,8 @@ div.left {
 
 /* Images. */
 p img {
-  float: right;
-  padding-left: 1em;
+  border: thin solid #d9d8d7;
+  padding: 3px;
 }
 
 div.image {
