@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 01:01:55>
+Time-stamp: <2012-01-17 01:04:11>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -165,9 +165,9 @@ Once you change a setting, use:
 
 to save your changes to your Irssi config file, located at `~/.irssi/config`.
 
-Aside: My real `timestamp_format` is `%d.%H%M%S`, which looks like "16.213823"
-(16th day of the month at 21:38:23). This timestamp is precise, minimal, and
-useful when scrolling back through several days of logs.
+> Aside: My real `timestamp_format` is `%d.%H%M%S`, which looks like
+> "16.213823" (16th day of the month at 21:38:23). This timestamp is precise,
+> minimal, and useful when scrolling back through several days of logs.
 
 ### Tab Completion
 
