@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lorem ipsum dolor sit amet
-Time-stamp: <2012-01-16 21:29:16>
+Time-stamp: <2012-01-16 22:28:57>
 ---
 
 The purpose of this page is to try out typical syntaxes when writing
@@ -139,3 +139,24 @@ And another paragraph below
 that. [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) has support for
 HTML5 &lt;figure&gt; tags when an image constitutes an entire
 paragraph. However, tranditional markdown does not support this.
+
+## Tables
+
+<table>
+<tr>
+  <th>ID</th>
+  <th>Idea</th>
+  <th>Support</th>
+</tr>
+<tr>
+  <td>0</td>
+  <td>Tables are good</td>
+  <td>At least sometimes. They are particularly good for tabular data.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Not good for layouts</td>
+  <td>Modern CSS and HTML have fixtures for making fancy layouts. Tables should
+      not be used for page layouts.</td>
+</tr>
+</table>
