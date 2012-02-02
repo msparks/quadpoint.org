@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2011-11-13 05:40:38>
+Time-stamp: <2012-02-02 00:22:26>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -41,12 +41,15 @@ $(window).load(function () {
 
 <div class="project">
   <div class="project-icon image left">
-    <a href="/projects/dotfiles" title="dotfiles"><img
-    src="/projects/dotfiles/dotfiles.png" width="75" height="75"
-    alt="dotfiles" /></a>
+    <a href="https://github.com/msparks/dotfiles"
+       title="dotfiles" target="_blank">
+      <img src="/projects/dotfiles/dotfiles.png" width="75" height="75"
+           alt="dotfiles" />
+    </a>
   </div>
 
-  <a href="/projects/dotfiles" class="project-link">dotfiles</a>
+  <a href="https://github.com/msparks/dotfiles"
+     class="project-link" target="_blank">dotfiles</a>
 
   <div class="project-desc">
     Configuration files.
