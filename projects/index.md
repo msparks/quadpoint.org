@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-02 00:22:26>
+Time-stamp: <2012-02-03 00:35:46>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -208,12 +208,15 @@ $(window).load(function () {
 
 <div class="project">
   <div class="project-icon image left">
-    <a href="/projects/svcshare" title="svcshare"><img
-    src="/static/images/questionmark.png" width="75" height="75"
-    alt="svcshare" /></a>
+    <a href="https://github.com/msparks/svcshare"
+       title="dotfiles" target="_blank">
+      <img src="/static/images/questionmark.png" width="75" height="75"
+           alt="svcshare" />
+    </a>
   </div>
 
-  <a href="/projects/svcshare" class="project-link">svcshare</a>
+  <a href="https://github.com/msparks/svcshare"
+     class="project-link" target="_blank">svcshare</a>
 
   <div class="project-desc">
     A distributed queueing system.
