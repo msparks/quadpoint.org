@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-03 00:35:46>
+Time-stamp: <2012-02-12 21:32:05>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -14,12 +14,15 @@ use it frequently.
 
 <div class="project">
   <div class="project-icon image left">
-    <a href="/projects/arduino-ds1620" title="arduino-ds1620"><img
-    src="/projects/arduino-ds1620/arduino-ds1620.png" width="75" height="75"
-    alt="arduino-ds1620" /></a>
+    <a href="https://github.com/msparks/arduino-ds1620"
+       title="arduino-ds1620" target="_blank">
+      <img src="/projects/arduino-ds1620/arduino-ds1620.png"
+           width="75" height="75" alt="dotfiles" />
+    </a>
   </div>
 
-  <a href="/projects/arduino-ds1620" class="project-link">arduino-ds1620</a>
+  <a href="https://github.com/msparks/arduino-ds1620"
+     class="project-link" target="_blank">arduino-ds1620</a>
 
   <div class="project-desc">
     DS1620 digital thermometer library for Arduino.
