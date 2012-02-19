@@ -18,7 +18,8 @@
 
 <script type="text/javascript">
 $(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'arduino-ds1620');
+  var al = new libgithub.ActivityLine('{{node.github | split:'/' | first}}',
+                                      '{{node.github | split:'/' | last}}');
   al.gravatarSizeIs(0);
   al.targetIs('#{{node.github | replace: '/','-'}}-commit');
 });
