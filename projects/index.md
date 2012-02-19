@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-18 20:26:38>
+Time-stamp: <2012-02-18 20:32:48>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -19,35 +19,6 @@ use it frequently.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="https://github.com/msparks/dotfiles"
-       title="dotfiles" target="_blank">
-      <img src="/projects/dotfiles/dotfiles.png" width="75" height="75"
-           alt="dotfiles" />
-    </a>
-  </div>
-
-  <a href="https://github.com/msparks/dotfiles"
-     class="project-link" target="_blank">dotfiles</a>
-
-  <div class="project-desc">
-    Configuration files.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="dotfiles-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'dotfiles');
-  al.gravatarSizeIs(0);
-  al.targetIs('#dotfiles-commit');
-});
-</script>
 
 
 <div class="project">
