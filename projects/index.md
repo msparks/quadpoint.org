@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-18 20:08:45>
+Time-stamp: <2012-02-18 20:26:38>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -19,36 +19,6 @@ use it frequently.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="https://github.com/msparks/arduino-ds1620"
-       title="arduino-ds1620" target="_blank">
-      <img src="/projects/arduino-ds1620/arduino-ds1620.png"
-           width="75" height="75" alt="dotfiles" />
-    </a>
-  </div>
-
-  <a href="https://github.com/msparks/arduino-ds1620"
-     class="project-link" target="_blank">arduino-ds1620</a>
-
-  <div class="project-desc">
-    DS1620 digital thermometer library for Arduino.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="arduino-ds1620-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'arduino-ds1620');
-  al.gravatarSizeIs(0);
-  al.targetIs('#arduino-ds1620-commit');
-});
-</script>
-
 
 <div class="project">
   <div class="project-icon image left">
