@@ -8,7 +8,7 @@
   <a href="{{node.link}}" class="project-link">{{node.title}}</a>
 
   <div class="project-desc">
-    {{node.content}}
+    {{node.summary}}
   </div>
 
   <div class="project-activity meta">
