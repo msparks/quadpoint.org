@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-18 20:32:48>
+Time-stamp: <2012-02-18 20:47:24>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -19,33 +19,6 @@ use it frequently.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/git-score" title="git-score"><img
-    src="/projects/git-score/git-score.png" width="75" height="75"
-    alt="git-score" /></a>
-  </div>
-
-  <a href="/projects/git-score" class="project-link">git-score</a>
-
-  <div class="project-desc">
-    Compute scores for contributors to a git repository.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="git-score-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'git-score');
-  al.gravatarSizeIs(0);
-  al.targetIs('#git-score-commit');
-});
-</script>
 
 
 <div class="project">
