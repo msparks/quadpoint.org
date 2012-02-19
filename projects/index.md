@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-12 21:32:05>
+Time-stamp: <2012-02-18 20:08:45>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -11,6 +11,14 @@ software, but I have done a few electronics projects as well.
 
 I consider a project to be 'active' if I make semi-frequent updates to it and
 use it frequently.
+
+{% assign group = 'projects' %}
+  {% for node in site.pages %}
+    {% if group == node.group %}
+{% include project_list_item.md %}
+    {% endif %}
+  {% endfor %}
+{% assign group = nil %}
 
 <div class="project">
   <div class="project-icon image left">
@@ -245,6 +253,15 @@ otherwise specified, I do accept patches to these. It is also possible that
 some of these may just be on hiatus.
 
 
+{% assign group = 'projects-inactive' %}
+  {% for node in site.pages %}
+    {% if group == node.group %}
+{% include inactive_project_list_item.md %}
+    {% endif %}
+  {% endfor %}
+{% assign group = nil %}
+
+
 <div class="project">
   <div class="project-icon image left">
     <a href="/projects/alphasign"
@@ -295,25 +312,6 @@ some of these may just be on hiatus.
 
   <div class="project-desc">
     A utility to manage bills for a resource shared equally among many people.
-  </div>
-
-  <div class="project-activity meta">
-    2008
-  </div>
-</div>
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/rfcgraph"
-    title="rfcgraph"><img src="/projects/rfcgraph/rfcgraph.png" width="75"
-    height="75" alt="rfcgraph" /></a>
-  </div>
-
-  <a href="/projects/rfcgraph" class="project-link">rfcgraph</a>
-
-  <div class="project-desc">
-    A tool to visualize the relationships between RFCs.
   </div>
 
   <div class="project-activity meta">
