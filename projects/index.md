@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-05 18:31:24>
+Time-stamp: <2012-05-05 19:11:14>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -19,34 +19,6 @@ use it frequently.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/infinitemachine" title="infinitemachine"><img
-    src="/projects/infinitemachine/infinitemachine.png" width="75" height="75"
-    alt="infinitemachine" /></a>
-  </div>
-
-  <a href="/projects/infinitemachine" class="project-link">infinitemachine</a>
-
-  <div class="project-desc">
-    A static content website generator.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="infinitemachine-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'infinitemachine');
-  al.gravatarSizeIs(0);
-  al.targetIs('#infinitemachine-commit');
-});
-</script>
-
 
 <div class="project">
   <div class="project-icon image left">
