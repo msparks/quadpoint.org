@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-05 19:18:48>
+Time-stamp: <2012-05-05 19:23:49>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -72,33 +72,6 @@ $(window).load(function () {
   var al = new libgithub.ActivityLine('msparks', 'libgithub');
   al.gravatarSizeIs(0);
   al.targetIs('#libgithub-commit');
-});
-</script>
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/pastee" title="pastee"><img
-    src="/static/images/questionmark.png" width="75" height="75"
-    alt="pastee" /></a>
-  </div>
-
-  <a href="/projects/pastee" class="project-link">pastee</a>
-
-  <div class="project-desc">
-    A secure pastebin.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="pastee-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'pastee');
-  al.gravatarSizeIs(0);
-  al.targetIs('#pastee-commit');
 });
 </script>
 
