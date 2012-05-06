@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-05 19:11:14>
+Time-stamp: <2012-05-05 19:18:48>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -99,36 +99,6 @@ $(window).load(function () {
   var al = new libgithub.ActivityLine('msparks', 'pastee');
   al.gravatarSizeIs(0);
   al.targetIs('#pastee-commit');
-});
-</script>
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="https://github.com/msparks/svcshare"
-       title="dotfiles" target="_blank">
-      <img src="/static/images/questionmark.png" width="75" height="75"
-           alt="svcshare" />
-    </a>
-  </div>
-
-  <a href="https://github.com/msparks/svcshare"
-     class="project-link" target="_blank">svcshare</a>
-
-  <div class="project-desc">
-    A distributed queueing system.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="svcshare-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'svcshare');
-  al.gravatarSizeIs(0);
-  al.targetIs('#svcshare-commit');
 });
 </script>
 
