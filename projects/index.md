@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-02-18 20:47:24>
+Time-stamp: <2012-05-05 18:31:24>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -252,24 +252,5 @@ some of these may just be on hiatus.
 
   <div class="project-activity meta">
     2006
-  </div>
-</div>
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/simplerip"
-    title="simplerip"><img src="/projects/simplerip/simplerip.png" width="75"
-    height="75" alt="simplerip" /></a>
-  </div>
-
-  <a href="/projects/simplerip" class="project-link">SimpleRip</a>
-
-  <div class="project-desc">
-    An easy way to rip DVDs on Linux.
-  </div>
-
-  <div class="project-activity meta">
-    2005
   </div>
 </div>
