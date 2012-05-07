@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-06 23:56:59>
+Time-stamp: <2012-05-07 01:18:45>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -34,26 +34,6 @@ some of these may just be on hiatus.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/alphasign"
-    title="alphasign"><img src="/static/images/questionmark.png" width="75"
-    height="75" alt="alphasign" /></a>
-  </div>
-
-  <a href="/projects/alphasign" class="project-link">alphasign</a>
-
-  <div class="project-desc">
-    An implementation of the Alpha Sign Communications Protocol in Python. It
-    is used to control Alpha American LED signs.
-  </div>
-
-  <div class="project-activity meta">
-    2009
-  </div>
-</div>
 
 
 <div class="project">
