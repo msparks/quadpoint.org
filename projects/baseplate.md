@@ -2,7 +2,7 @@
 layout: default
 title: baseplate
 group: projects
-link: https://github.com/msparks/baseplate
+link: http://quadpoint.org/projects/baseplate/
 github: msparks/baseplate
 icon: /static/images/questionmark.png
 date: 2012-02-12
