@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-06 23:26:50>
+Time-stamp: <2012-05-06 23:56:59>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -19,33 +19,6 @@ use it frequently.
     {% endif %}
   {% endfor %}
 {% assign group = nil %}
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/irssiscripts" title="irssiscripts"><img
-    src="/projects/irssiscripts/irssiscripts.png" width="75" height="75"
-    alt="irssiscripts" /></a>
-  </div>
-
-  <a href="/projects/irssiscripts" class="project-link">irssiscripts</a>
-
-  <div class="project-desc">
-    A collection of scripts I have written
-    for <a href="http://irssi.org">Irssi</a>.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="irssiscripts-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'irssiscripts');
-  al.gravatarSizeIs(0);
-  al.targetIs('#irssiscripts-commit');
-});
-</script>
 
 ## Completed and Inactive Projects
 
