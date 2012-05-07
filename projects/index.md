@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-05 19:23:49>
+Time-stamp: <2012-05-06 23:26:50>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -44,34 +44,6 @@ $(window).load(function () {
   var al = new libgithub.ActivityLine('msparks', 'irssiscripts');
   al.gravatarSizeIs(0);
   al.targetIs('#irssiscripts-commit');
-});
-</script>
-
-
-<div class="project">
-  <div class="project-icon image left">
-    <a href="/projects/libgithub" title="libgithub"><img
-    src="/static/images/questionmark.png" width="75" height="75"
-    alt="libgithub" /></a>
-  </div>
-
-  <a href="/projects/libgithub" class="project-link">libgithub</a>
-
-  <div class="project-desc">
-    A JavaScript library to display GitHub data on websites. It populates
-    the 'Activity' lines on this page.
-  </div>
-
-  <div class="project-activity meta">
-    <span id="libgithub-commit"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-$(window).load(function () {
-  var al = new libgithub.ActivityLine('msparks', 'libgithub');
-  al.gravatarSizeIs(0);
-  al.targetIs('#libgithub-commit');
 });
 </script>
 
