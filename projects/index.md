@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-Time-stamp: <2012-05-07 01:29:56>
+Time-stamp: <2012-05-07 01:39:24>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
@@ -25,7 +25,6 @@ use it frequently.
 The projects I no longer frequently work on are listed here. However, unless
 otherwise specified, I do accept patches to these. It is also possible that
 some of these may just be on hiatus.
-
 
 {% assign group = 'projects-inactive' %}
   {% for node in site.pages %}
