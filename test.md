@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Lorem ipsum dolor sit amet
-Time-stamp: <2012-01-16 22:28:57>
+extensions: ['math']
+Time-stamp: <2012-05-07 22:51:26>
 ---
 
 The purpose of this page is to try out typical syntaxes when writing

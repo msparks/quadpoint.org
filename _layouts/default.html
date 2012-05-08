@@ -13,11 +13,14 @@
   <script type="text/javascript" src="/static/js/jquery.min.js"></script>
   <script type="text/javascript" src="/static/js/jquery.lightbox.pack.js"></script>
   <script type="text/javascript" src="/static/js/jquery.tableofcontents.min.js"></script>
+{% for extension in page.extensions %}{% if extension == 'libgithub' %}
   <script type="text/javascript" src="/static/js/date.js"></script>
   <script type="text/javascript" src="/static/js/humane.js"></script>
   <script type="text/javascript" src="/static/js/libgithub.min.js"></script>
+{% elsif extension == 'math' %}
   <script type="text/javascript"
           src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}{% endfor %}
 </head>
 <body>
   <div class="container">
