@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Projects
-extensions: ['libgithub', 'math']
-Time-stamp: <2012-05-07 22:52:39>
+extensions: ['libgithub']
+Time-stamp: <2012-05-12 22:27:30>
 ---
 
 This is a collection of public projects I've started or worked on. Most are
