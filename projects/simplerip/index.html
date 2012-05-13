@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SimpleRip: Ripping/Encoding DVDs to Xvid with Mencoder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="SimpleRip: Ripping/Encoding DVDs to Xvid with Mencoder">
+  <meta name="author" content="Matt Sparks">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="span8 offset2">
+
+<div class="hero-unit">
+  <h1>SimpleRip</h1>
+
+  <p>
+    This page generates the necessary commands to encode a movie directly from
+    a DVD title to an Xvid file using <a href="http://mplayerhq.hu"
+    target="_blank">MEncoder</a> without the need for other applications or
+    helper scripts.
+  </p>
+</div>
+
+<form class="form-horizontal" id="options-form">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="sr_source">
+        <a href="#source_file">Source</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_source" value="dvd://1">
+        <p class="help-block">Input source path</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_outfile">
+        <a href="#output_file">Output</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_outfile"
+               value="movie.avi">
+        <p class="help-block">Output file</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_abr">
+        <a href="#audio_and_video_bitrates">Audio bitrate</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_abr" value="128">
+        <p class="help-block">In kilobits per second (kbps)</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_vbr">
+        <a href="#audio_and_video_bitrates">Video bitrate</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_vbr" value="0">
+        <p class="help-block">In kilobits per second (kbps)</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_gain">
+        <a href="#volume_gain">Volume gain</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_gain" value="0">
+        <p class="help-block">Range: -10 (quieter) to 10 (louder)</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_nice">
+        <a href="#process_nice">Process nice</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_nice" value="3">
+        <p class="help-block">Range: -20 (high priority) to 20 (low
+          priority)</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_passes">
+        <a href="#passes">Passes</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_passes" value="2">
+        <p class="help-block">Number of encoding passes</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_crop">
+        <a href="#crop">Crop</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_crop">
+        <p class="help-block"><em>(optional)</em>
+          Example: <tt>704:464:10:8</tt></p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_scale">
+        <a href="#scale">Scale</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_scale">
+        <p class="help-block"><em>(optional)</em> Example: 704:294</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="sr_extra">
+        <a href="#extra_options">Extra options</a>
+      </label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="sr_extra">
+        <p class="help-block"><em>(optional)</em>
+          Extra flags to pass to mencoder</p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<pre id="mencoder_out">(mencoder commands will magically appear here)</pre>
+
+<h2>Options</h2>
+
+<h3 id="source_file">Source file</h3>
+
+<p>
+  This is the input file to read. This will typically be <tt>dvd://1</tt>, where
+  <tt>1</tt> is the DVD title to rip. However, this can also be a .VOB file or
+  any other video file that is readable by Mplayer.
+</p>
+
+<h3 id="output_file">Output file</h3>
+
+<p>
+  This is the .AVI file that results when the encoding is complete.
+</p>
+
+<h3 id="audio_and_video_bitrates">Audio and video bitrates</h3>
+
+<p>
+  For movies, 128kbps for audio is typically plenty. Some people recommend
+  bumping audio down to 96kbps. The result is slightly less quality audio with
+  a bump up in video bitrate for the same output size. <em>It is recommended
+  that a video bitrate of 700kbps or above be used.</em>
+</p>
+
+<h3 id="volume_gain">Volume gain</h3>
+
+<p>
+  Value from -10 to 10. The higher the value, the more gain. This is useful for
+  correcting movies that have a subnormal volume.
+</p>
+
+<h3 id="process_nice">Process nice</h3>
+
+<p>
+  Value from -20 to 19. Adjusting this value will adjust the priority mencoder
+  is given when encoding. A priority of 0 is normal, a negative priority is
+  higher than normal, and a positive priority is less than normal.
+</p>
+
+<h3 id="crop">Crop</h3>
+
+<p>
+  Cropping is necessary to remove the black borders at the top and bottom of
+  widescreen-format DVDs, and scaling will resize the output video to a smaller
+  pixel by pixel area, resulting in increased quality.
+</p>
+
+<p>
+  Mplayer can automatically detect the crop settings. To determine the
+  appropriate settings for your video (they will likely change per movie), open
+  a terminal and execute <code>mplayer dvd://1 -vf cropdetect</code>
+  where <tt>dvd://1</tt> is your source. Play for about 20 seconds and wait
+  until the output is stable. You should see something like <tt>-vf
+  crop=704:464:10:8</tt> printed repeatedly. In this case,
+  the <tt>704:464:10:8</tt> is the important part.
+</p>
+
+<p>
+  The format for this option is <tt>W:H:X:Y</tt>, where:
+</p>
+
+<dl>
+  <dt>W, H</dt>
+  <dd>Cropped width and height.</dd>
+  <dt>X, Y</dt>
+  <dd>Position of the cropped picture.</dd>
+</dl>
+
+<h3 id="scale">Scale</h3>
+
+<p>
+  For determining the scale, decide if the movie widescreen (16:9 ratio) or
+  fullscreen (4:3).
+</p>
+
+<ul>
+  <li>Widescreen: use scale <tt>704:294</tt> (2.35:1) or <tt>768:432</tt>
+    (16:9)</li>
+  <li>Fullscreen: use scale <tt>640:480</tt></li>
+</ul>
+
+<p>
+  <strong>This option is complicated.</strong> See the
+  <a href="http://www.mplayerhq.hu/DOCS/man/en/mplayer.1.html#VIDEO%20FILTERS"
+     target="_blank"><tt>scale</tt> video filter options</a> in the manpage for
+     details.
+</p>
+
+<h3 id="passes">Passes</h3>
+
+<p>
+  Value: 1 or 2. A two-pass encode is recommended. The quality is significantly
+  better with a two-pass, but, as the name suggests, the video is passed over
+  twice, roughly doubling the encode time.
+</p>
+
+<h3 id="extra_options">Extra options</h3>
+
+<p>
+  Here you can place extra options to pass to mencoder. Some useful options may
+  be:
+</p>
+
+<dl>
+  <dt>-ss &lt;time&gt;</dt>
+  <dd>Seek to given time position. (Start encoding here)</dd>
+  <dt>-endpos &lt;[[hh:]mm:]ss[.ms]|size[b|kb|mb]&gt;</dt>
+  <dd>Stop encoding at the given time or byte position.</dd>
+</dl>
+
+<p>
+  See these options and more in the
+  <a href="http://www.mplayerhq.hu/DOCS/man/en/mplayer.1.html#DEMUXER/STREAM%20OPTIONS"
+     target="_blank">mplayer manpage</a>.
+</p>
+
+<h2>About this document</h2>
+
+<p>
+  I wrote this 'program' in 2005 after I read up on encoding in Linux and
+  investigating other solutions. I tried <a href="http://exit1.org/dvdrip/"
+  target="_blank">dvd::rip</a>, but had problems with various bugs, and I
+  craved more automation. I moved on to writing a shell script, but then
+  realized there were too many settings for a simple
+  implementation. Considering various options for GUI setups, the idea to use
+  JavaScript seemed appealing for a couple of reasons:
+</p>
+
+<ol>
+  <li>I wanted to experiment with the capabilities of JavaScript</li>
+  <li>With this web-based approach, anyone can easily generate the necessary
+    commands to encode the video in the desired way, without installing extra
+    software or messing with commandline switches, which seem to be forgotten
+    just after they're used.</li>
+</ol>
+
+<p>
+  So, this is SimpleRip, the JavaScript mencoder command generator, the product
+  of my experimentation of Linux DVD ripping.
+</p>
+
+<h2>Further reading</h2>
+
+<ul>
+  <li><a href="http://gentoo-wiki.com/wiki/HOWTO_Mencoder_Introduction_Guide"
+         target="_blank">HOWTO Mencoder Introduction Guide - Gentoo Linux
+         Wiki</a></li>
+  <li><a href="http://ms2.alien.de/0410/images/stories/sectiondoc/video/xvid-mencoder-homelinux.pdf"
+         target="_blank">Mencoder DVD to MPEG-4 - RTFMwiki</a> (PDF)</li>
+</ul>
+
+<script language="javascript" type="text/javascript" src="js/jquery.min.js">
+</script>
+<script language="javascript" type="text/javascript" src="js/simplerip.js">
+</script>
+
+<script language="javascript" type="text/javascript">
+  $('#options-form input').keyup(generate);
+</script>
+
+</div>
+</div>
+</div>
+</body>
+</html>
