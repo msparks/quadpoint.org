@@ -1,7 +1,8 @@
 ---
 layout: default
 title: git-annex
-Time-stamp: <2012-05-28 05:33:15>
+date: 2012-05-28
+Time-stamp: <2012-05-28 06:20:29>
 ---
 
 ## Installing on OS X
