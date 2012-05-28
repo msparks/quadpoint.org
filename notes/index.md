@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Notes
-Time-stamp: <2012-05-13 00:38:06>
+Time-stamp: <2012-05-28 03:54:55>
 ---
 
 <div class="subtitle meta">With high entropy</div>
@@ -9,7 +9,9 @@ Time-stamp: <2012-05-13 00:38:06>
 This page is for informal notes that may or may not be in the process of
 becoming articles.
 
-There are no informal notes right now.
+[git-annex](/notes/git-annex) <span class="meta">| 2012</span>
+: git-annex is a tool for managing file metadata and directory structures using
+  git, without actually storing file content in git.
 
 > Well, the way they pick TV shows is, they make one show. That show's called a
 > pilot. Then they show that one show to the people who pick shows, and on the
