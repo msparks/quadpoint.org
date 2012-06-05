@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Notes
-Time-stamp: <2012-05-28 06:20:16>
+Time-stamp: <2012-06-05 02:45:11>
 ---
 
 <div class="subtitle meta">With high entropy</div>
 
 This page is for informal notes that may or may not be in the process of
 becoming articles.
+
+[ms's laws of design](/notes/lawsofdesign) <span class="meta">| 2012</span>
+: My laws of design.
 
 [git-annex](/notes/git-annex) <span class="meta">| 2012</span>
 : git-annex is a tool for managing file metadata and directory structures using
