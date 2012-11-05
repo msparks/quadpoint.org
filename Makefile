@@ -1,5 +1,5 @@
 all:
-	infmx
+	jekyll
 
 beta:
 	./deploy.sh beta
