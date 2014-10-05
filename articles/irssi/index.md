@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2012-01-17 01:04:11>
+Time-stamp: <2014-10-05 00:10:35>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -488,15 +488,15 @@ obtain a more complicated Irssi setup like this:
 ### Theme
 
 The theme only changes the colors of text and objects in Irssi, as well as some
-symbols used in the statusbars. The `>>` used at the beginning of the
-statusbars in my screenshot is there because of the theme I'm using. The theme
-used in that screenshot is my own hack of the irssi default themes called
-[fear2](http://static.quadpoint.org/irssi/fear2.theme).
+symbols used in the statusbars. The `>>` used at the beginning of the statusbars
+in my screenshot is there because of the theme I'm using. The theme used in that
+screenshot is my own hack of the irssi default themes called
+[fear2](https://raw.githubusercontent.com/msparks/irssiscripts/master/themes/fear2.theme).
 
 To load a new theme, first download the `.theme` file into `~/.irssi`; from a
 shell prompt:
 
-    wget -P ~/.irssi http://static.quadpoint.org/irssi/fear2.theme
+    wget -P ~/.irssi https://raw.githubusercontent.com/msparks/irssiscripts/master/themes/fear2.theme
 
 then use `/set theme fear2` in irssi, where "fear2" is the part of the
 filename before `.theme`. Don't forget to `/save` if you want to keep that
@@ -510,7 +510,7 @@ will be logged to that window.
 
 To do this, first load the script. The script I use is a modified version of
 cras's `hilightwin.pl` that logs timestamps as well. It is available here:
-[hilightwin.pl](http://static.quadpoint.org/irssi/hilightwin.pl)
+[hilightwin.pl](https://github.com/irssi/scripts.irssi.org/blob/gh-pages/scripts/hilightwin.pl)
 
 Put the script in `~/.irssi/scripts/autorun/` and type `/run
 autorun/hilightwin.pl` in irssi.
