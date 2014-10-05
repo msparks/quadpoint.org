@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: arduino-rgbled
 group: projects-inactive
 link: https://github.com/msparks/arduino-rgbled

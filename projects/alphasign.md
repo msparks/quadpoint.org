@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: alphasign
 group: projects-inactive
 link: https://github.com/msparks/alphasign

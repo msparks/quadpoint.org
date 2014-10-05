@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: arduino-ds1302
 group: projects-inactive
 link: https://github.com/msparks/arduino-ds1302

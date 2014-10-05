@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: pastee
 group: projects
 link: https://github.com/msparks/pastee

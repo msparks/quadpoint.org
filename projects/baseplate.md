@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: baseplate
 group: projects
 link: https://github.com/msparks/baseplate

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: frigid
 group: projects
 link: https://github.com/msparks/frigid

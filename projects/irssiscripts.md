@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: irssiscripts
 group: projects
 link: https://github.com/msparks/irssiscripts

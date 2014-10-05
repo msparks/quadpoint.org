@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: libgithub
 group: projects
 link: https://github.com/msparks/libgithub

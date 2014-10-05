@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: SimpleRip
 group: projects-inactive
 link: /projects/simplerip

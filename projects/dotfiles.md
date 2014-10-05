@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: dotfiles
 group: projects
 link: https://github.com/msparks/dotfiles

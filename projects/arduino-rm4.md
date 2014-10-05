@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: arduino-rm4
 group: projects-inactive
 link: https://github.com/msparks/arduino-rm4

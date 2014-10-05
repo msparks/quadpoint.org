@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: svcshare
 group: projects
 link: https://github.com/msparks/svcshare

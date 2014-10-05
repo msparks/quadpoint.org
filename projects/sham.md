@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: Engine Yard hashing contest postmortem
 parent: projects
 date: 2009-07-21 23:50:00

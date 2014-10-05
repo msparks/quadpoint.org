@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: redirect
 title: git-score
 group: projects
 link: https://github.com/msparks/git-score
