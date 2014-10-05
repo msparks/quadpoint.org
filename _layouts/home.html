@@ -20,8 +20,10 @@
           {% if page.date %}Posted {{ page.date | date:"%B %e, %Y" }}{% endif %}
           {% if page.Time-stamp %}
           {% if page.date %}&middot;{% endif %}
-          Modified {{ page.Time-stamp | date:"%B %e, %Y" }}
-          {% endif %}
+          Modified
+          <a href="https://github.com/msparks/quadpoint.org/commits/gh-pages/{{page.path}}">
+            {{ page.Time-stamp | date:"%B %e, %Y" }}
+          </a>{% endif %}
         </span>
       </div>
     </div>
