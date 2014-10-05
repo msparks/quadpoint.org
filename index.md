@@ -1,7 +1,7 @@
 ---
 layout: home
 title: quadpoint.org
-Time-stamp: <2014-10-05 00:24:37>
+Time-stamp: <2014-10-05 02:46:23>
 ---
 
 # Matt Sparks
@@ -17,15 +17,15 @@ Time-stamp: <2014-10-05 00:24:37>
 
   <ul>
     <li>
-      <a href="/projects">Projects</a><br />
+      <a href="/projects/">Projects</a><br />
       <span>Software and hardware projects, new and old.</span>
     </li>
     <li>
-      <a href="/articles">Articles</a><br />
+      <a href="/articles/">Articles</a><br />
       <span>Articles and talks on various subjects.</span>
     </li>
     <li>
-      <a href="/notes">Notes</a><br />
+      <a href="/notes/">Notes</a><br />
       <span>Informal written notes.</span>
     </li>
   </ul>

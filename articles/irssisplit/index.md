@@ -2,7 +2,7 @@
 layout: default
 title: An Illustrated Guide to Split Windows in Irssi
 date: 2005-10-16
-Time-stamp: <2012-05-13 00:40:21>
+Time-stamp: <2014-10-05 02:49:01>
 ---
 
 The ability to create "split" windows in [Irssi](http://irssi.org) is one of
@@ -53,7 +53,7 @@ the terms of this guide, the more correct term would be a "split screen". The
 entity that Irssi calls a "split window" is known as a **container** here.
 
 > Tip: Learn how to add a statusbar containing your window list on my
-> [guide to irssi and screen](/articles/irssi).
+> [guide to irssi and screen](/articles/irssi/).
 
 At this point, you should be comfortable with the fact that Irssi starts with
 one container, which contains one visible window. Multiple containers means
@@ -246,4 +246,4 @@ itemless window with this method, but you can close it with `/window close`
 (`/wc`).
 
 **Tip #2**: Use a split window to log your hilights. This is described in my
-[guide to Irssi and screen](/articles/irssi).
+[guide to Irssi and screen](/articles/irssi/).
