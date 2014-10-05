@@ -1,5 +1,5 @@
 all:
-	jekyll
+	jekyll build
 
 beta:
 	./deploy.sh beta
