@@ -2,7 +2,7 @@
 layout: default
 title: A Guide to Efficiently Using Irssi and Screen
 date: 2004-12-19
-Time-stamp: <2014-10-05 00:10:35>
+Time-stamp: <2014-10-05 02:59:12>
 ---
 
 Irssi is a text-only IRC client. It does not get in your way and its commands
@@ -196,13 +196,13 @@ the top of each script you download**; usually there is documentation there of
 some kind explaining the settings for the script. I recommend installing the
 following scripts to start:
 
-* [splitlong.pl](http://www.irssi.org/scripts/scripts/splitlong.pl)  
+* [splitlong.pl](http://scripts.irssi.org/scripts/splitlong.pl)  
   Splits long messages into multiple lines to avoid having messages truncated
   due to IRC limits.
-* [dispatch.pl](http://www.irssi.org/scripts/scripts/dispatch.pl)  
+* [dispatch.pl](http://scripts.irssi.org/scripts/dispatch.pl)  
   Sends unknown commands, such as server-specific commands like `/map`, to the
   server instead of requiring the use of `/quote` (e.g., `/quote map`).
-* [usercount.pl](http://www.irssi.org/scripts/scripts/usercount.pl)  
+* [usercount.pl](http://scripts.irssi.org/scripts/usercount.pl)  
   Makes population of the current channel available for display in the status
   bar. Read the script for instructions for use.
 
@@ -547,7 +547,7 @@ hilight window on startup.
 See number 2 in the screenshot above. This is the default statusbar that you
 will see in any default irssi setup. However, mine is slightly modified to
 include a user count of the current channel. This is easily done by loading the
-[usercount.pl](http://irssi.org/scripts/scripts/usercount.pl) script and typing
+[usercount.pl](http://scripts.irssi.org/scripts/usercount.pl) script and typing
 `/statusbar window add usercount` in irssi.
 
 
@@ -739,7 +739,7 @@ can avoid restarting it by using `Ctrl-a :utf8 on` to enable this option.
 
 Enabling UTF-8 support in Irssi is typically as simple as `/set term_charset
 utf-8` and `/save`. Try pasting some Japanese characters from
-[yahoo.jp](http://yahoo.jp) to test.
+[www.yahoo.co.jp](http://www.yahoo.co.jp) to test.
 
 If you get garbage when you type foreign characters, something went wrong with
 the above three steps. Try to deduce the problem by running Irssi outside of
@@ -757,9 +757,9 @@ sites:
 
 * [Official documentation](http://irssi.org/documentation) - Docs on the
   official irssi website, [irssi.org](http://irssi.org)
-* [web::irssi::scripts](http://irssi.org/scripts/) - Archive of many, many
+* [web::irssi::scripts](http://scripts.irssi.org/) - Archive of many, many
   various scripts for use with irssi.
-* [Guide to Using Screen and Irssi](http://lizzie.spod.cx/screenirssi.shtml) by
-  [Elizabeth Overal](http://lizzie.spod.cx/) - Another screen+irssi tutorial
-  with some more information. Thanks for the link, lizzie.
+* [Guide to Using Screen and Irssi](http://carina.org.uk/screenirssi.shtml) by
+  [Elizabeth Overal](http://carina.org.uk/) - Another screen+irssi tutorial
+  with some more information. Thanks for the link, Lizzie.
 * [Blinkenshell](http://blinkenshell.org) - Free UNIX shell provider.
