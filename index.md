@@ -1,7 +1,7 @@
 ---
 layout: home
 title: quadpoint.org
-Time-stamp: <2014-10-05 02:46:23>
+Time-stamp: <2014-10-05 03:01:45>
 ---
 
 # Matt Sparks
@@ -13,7 +13,7 @@ Time-stamp: <2014-10-05 02:46:23>
 <div class="profile">
   <img
    src="https://lh6.googleusercontent.com/-ysLaIDYFcBU/ThSKMa5kpAI/AAAAAAAAABs/2L8PfbbJjYE/s288/Matt%252520Sparks.jpg"
-   title="Matt Sparks" class="profile" />
+   title="Matt Sparks" alt="Matt Sparks" class="profile" />
 
   <ul>
     <li>
