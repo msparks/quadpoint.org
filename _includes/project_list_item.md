@@ -18,8 +18,10 @@
 
 <script type="text/javascript">
 $(window).load(function () {
-  var al = new libgithub.ActivityLine('{{node.github | split:'/' | first}}',
-                                      '{{node.github | split:'/' | last}}');
+  var al = new libgithub.ActivityLine(
+      '{{node.github | split:'/' | first}}',
+      '{{node.github | split:'/' | last}}'{% if node.github-branch %},
+      '{{node.github-branch}}'{% endif %});
   al.gravatarSizeIs(0);
   al.targetIs('#{{node.github | replace: '/','-'}}-commit');
 });
