@@ -1,0 +1,59 @@
+==================================================================
+https://keybase.io/m3s
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://quadpoint.org
+  * I am m3s (https://keybase.io/m3s) on keybase.
+  * I have a public key with fingerprint 0421 D660 2AF0 B353 8846  D4D6 B06C 9185 D235 0400
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0421d6602af0b3538846d4d6b06c9185d2350400",
+            "host": "keybase.io",
+            "key_id": "b06c9185d2350400",
+            "uid": "ba4afdf5dd2253b74594c14a2d9eeb00",
+            "username": "m3s"
+        },
+        "service": {
+            "hostname": "quadpoint.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418001514,
+    "expire_in": 157680000,
+    "prev": "a577772df70ee81602b67c1dc7c97bb012044629f9243da01e63b8416f900fb8",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.6
+Comment: https://keybase.io/crypto
+
+yMDrAnicbVE9axVBFF01RvIgkmcpVgNBCI/HzOzM7Ie9lSCBNFaPmZ27m9G8nc3u
+vqchBCwiFqnyA0TIL0hnSjGpki5lKrEQK3+BgndM7JxmmHPPOffcuWfLd6LB8Hjr
+8N2lXIhuXXz+OYs29n+93CXG2x2S75JX8PcqXV1B27Su7klOqODMKkW5LqmJZZym
+QllhlaGqyFgqLY8lFZSSEdn0XVCgjdEdjJ1HDB8TZxH9D392XdBCl7aU1nIuY5MI
+mYmCCc1tBmCuiR20tZ4CsqdxR/ZGBIG5KyDEDV1vitszbRuPuce+rVDXtL73hd/C
+0mbfN10epP1OE7ivwUxuXCbG1RaHRsUc2s75muQMmUXvgi0TLKWUSSZGBN40roWJ
+CwyZKMQpDX1gjpZaJni4LRMKkDL8M6OSgtkiKbLEGMo4FULxrMy4iK2mDFRsUsFU
+mVFampSEubZrT/IEY+oKLTtX1bqftUD2vjxdiIaDaPHu7bC1aLC08m+X+Vn0cX34
+6cH498nqo6v739nUP157W51HH1aOnyx2yz9ePHw2/nZw7/n7r0en+38ATXeiEw==
+=1YsG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/m3s
+
+==================================================================
